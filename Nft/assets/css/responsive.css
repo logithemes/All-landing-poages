@@ -33,6 +33,13 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
+    .about-us {
+        padding: 0 15px;
+    }
+    .about-content {
+        width: 100%;
+        padding: 0;
+    }
 	.testimonial-img{margin: 0;}
 	.contact-us{padding: 140px 0 0 0;}
 	.case-img{margin: 15px 0;}
@@ -317,18 +324,8 @@
         display: none;
     }
 
-    .ban-lhs h1, .ban-lhs b {
-        font-size: 48px;
-        line-height: 80px;
-        display: inline-block;
-    }
 
-    .ban-lhs img {
-        width: 40px;
-        height: 40px;
-        margin-right: 10px;
-        margin-top: 21px;
-    }
+   
 
     .footer::before, .footer::after, .testimonial::before, .testimonial::after {
         display: none;
@@ -438,20 +435,10 @@
         width: 100%;
     }
 
-    .ban-lhs img {
-/* display: none; */
-        margin-top: 10px;
-        width: 30px;
-        height: 30px;
-    }
 
-    .ban-lhs h1, .ban-lhs b {
+    .ban-lhs h1{
         font-size: 40px;
         line-height: 52px;
-    }
-
-    .ban-lhs b {
-        margin-right: 10px;
     }
 
     .showcase li {
