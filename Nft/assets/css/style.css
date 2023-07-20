@@ -526,7 +526,7 @@ a:hover {
 }
 
 .abt-student-img .student-img2 {
-	bottom: -30px;
+	bottom: -6px;
 	left: 30px;
 }
 
@@ -587,7 +587,7 @@ a:hover {
     left: 0;
     right: 0;
     transition: transform 0.3s ease-in-out;
-    background: #3c3ddc;
+    background: #7fffd4;
     transform: scalex(0);
     transform-origin: right;
     height: 100%;
@@ -599,21 +599,14 @@ a:hover {
     transform-origin: left;
 }
 
-.services-box-inner::before {
-    position: absolute;
-    content: "";
-    top: -31px;
-    right: -29px;
-    background: url(../images/icons/line1.png);
-    width: 70px;
-    height: 70px;
-    background-size: cover;
-    transform: rotate(44deg);
-}
 
 .services-box i {
     color: #ff7425;
     font-size: 30px;
+    color: #fff;
+    background: linear-gradient(45deg, #2627fa, #ff544f 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .services-box-inner h4 {
@@ -647,15 +640,14 @@ a:hover {
     object-fit: cover;
     position: absolute;
     right: 0;
+    top: 5px;
 }
 
 .fun-fact-inner {
     float: left;
     width: 100%;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #fff;
 }
 .why-choose-box{}
 .why-choose-box .services-box-inner:first-child{
@@ -1196,16 +1188,28 @@ side-panel-con ul {
     width: 100%;
     float: left;
     text-align: center;
+    /* overflow: hidden; */
+    margin-top: -100px;
 }
 
 
 .fun-fact-inner li {
     float: left;
-    width: 50%;
-    border: 1px solid #ffffff63;
+    width: 25%;
+    border-right: 1px solid #443a3a63;
     padding: 30px;
 }
-
+.fun-fact-inner ul li:first-child{
+    border-left: 0;
+}
+.fun-fact-inner ul li:last-child{
+    border-right: 0;
+}
+.fun-fact-inner ul li:nth-child(2){
+}
+.fun-fact-inner ul li:nth-child(3){
+    border-left: 0;
+}
 .number {
     position: relative;
     display: flex;
@@ -1216,20 +1220,22 @@ side-panel-con ul {
 }
 
 .number i {
-    color: #fff;
+    /* color: #fff; */
     font-size: 30px;
 }
 
 .number span {
-    font-size: 33px;
-    color: #fff;
-    margin: 10px 0 5px 0;
+    font-size: 36px;
+    /* color: #fff; */
+    margin: 10px 0 8px 0;
+    font-weight: 600;
 }
 
 .number h4 {
-    font-size: 34px;
-    color: #fff;
+    font-size: 16px;
+    /* color: #fff; */
     font-weight: 500 !important;
+    text-transform: uppercase;
 }
 
 .videos {
@@ -1277,14 +1283,16 @@ side-panel-con ul {
     position: absolute;
     content: "";
     top: 0;
-    background: url(../images/img1/3.jpg);
+    /* background: url(../images/background/2.png); */
     background-size: cover;
     width: 100%;
-    height: 95%;
+    height: 100%;
     left: 0;
     right: 0;
     bottom: 0;
-    filter: brightness(0.5);
+    filter: inherit;
+    background-position: center;
+    /* transform: scalex(1.3); */
 }
 
 .rating {
@@ -1330,7 +1338,7 @@ side-panel-con ul {
 .services {
     float: left;
     width: 100%;
-    padding: 100px 0 100px 0;
+    padding: 100px 0 200px 0;
     position: relative;
     background: #f5f5fd;
     overflow: hidden;
@@ -1374,7 +1382,7 @@ side-panel-con ul {
     bottom: 0px;
     width: 100%;
     height: 1px;
-    background: aquamarine;
+    background: #7fffd4;
     height: 0;
     left: 0;
     transition: all 0.5s ease;
@@ -1434,31 +1442,80 @@ side-panel-con ul {
     border-radius: 15px;
     text-transform: capitalize;
     float: left;
-    padding: 30px;
+    padding: 44px 40px 43px 40px;
     overflow: hidden;
     background: #fff;
     border: 1px solid #e8d8d8;
     overflow: hidden;
 }
 
-.services-det img {
-    width: 60px;
-    height: 60px;
-	
-    position: relative;
+.services-det i {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    background: linear-gradient(45deg, #2627fa, #ff544f 80%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    flex-direction: column;
+    padding-top: 8px;
 }
-
+.services-det span{
+    color: #fff;
+    margin-top: -10px;
+    font-size: 16px;
+}
+.services-det h3{
+    position: relative;
+    font-size: 15px;
+    color: #fff;
+    background: linear-gradient(45deg, #2627fa, #ff544f 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .services-det h4 {
     margin: 0;
     display: block;
-    padding: 26px 0 26px 0;
+    padding: 5px 0 15px 0;
     position: relative;
     font-weight: 500 !important;
+    font-size: 32px;
 }
 
 .services-det p {
     font-size: 14px;
     position: relative;
+    padding-bottom: 15px;
+}
+
+.road-map-list{
+    float: left;
+    width: 100%;
+    padding: 15px 0 0 0;
+    border-top: 1px solid #cfd7ec;
+}
+.road-map-list i{
+    display: block;
+    position: relative;
+    background: none;
+    width: auto;
+    height: auto;
+    color: #000;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+    margin-bottom: 4px;
+}
+.road-map-list span{
+    color: #000;
+    margin: 0 0 0 7px;
+    font-size: 15px;
 }
 
 /*-------------------------------------------------*/
@@ -1469,7 +1526,7 @@ side-panel-con ul {
     float: left;
     width: 100%;
     position: relative;
-    padding: 0 0 120px 0;
+    padding: 120px 0 120px 0;
     text-align: center;
     overflow: hidden;
 }
@@ -1501,8 +1558,8 @@ side-panel-con ul {
     left: 0;
     animation: rotate 4s infinite linear;
     z-index: 99;
-    background: gold;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background: url(../images/icons/bitcoin-01.png);
+    background-size: contain;
 }
 
 .team-img {
@@ -1540,13 +1597,14 @@ side-panel-con ul {
     content: "";
     bottom: 110px;
     right: -17px;
-    background: gold;
+    background: url(../images/icons/ethereum-02.png);
     transition: all 0.5s ease;
     animation: rotate 4s infinite linear;
     width: 20px;
     height: 20px;
     z-index: 3;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-size: cover;
 }
 
 
@@ -1561,6 +1619,7 @@ side-panel-con ul {
     float: left;
     height: 250px;
     object-fit: cover;
+    border-radius: 0 100px 100px 100px;
 }
 
 .team-img .team-det {
@@ -1632,7 +1691,6 @@ side-panel-con ul {
     height: 100%;
     object-fit: cover;
     border-radius: 2px;
-    filter: brightness(0.5);
 }
 
 .post-content {
@@ -1803,6 +1861,7 @@ side-panel-con ul {
     position: relative;
     width: 100%;
     background: #fff;
+    display: none;
 }
 
 .testimonial::before, .testimonial::after {
@@ -1917,6 +1976,7 @@ side-panel-con ul {
 .contact-us {
     position: relative;
     padding: 188px 0 0 0;
+    display: none;
     background: #f5f5f5;
     overflow: hidden;
 }
@@ -3312,3 +3372,16 @@ side-panel-con ul {
     width: 100%;
     height: 100%;
 }
+
+/*-------------------------------------------------*/
+/* FAQ  
+/*-------------------------------------------------*/
+
+.faq{}
+.faq-list{}
+.faq-list ul{}
+.faq-list li{}
+.faq-list h3{}
+.faq-list p{display: none;}
+.faq-list .act{display: block;}
+.{}
