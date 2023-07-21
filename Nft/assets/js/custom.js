@@ -50,13 +50,13 @@ $(document).ready(function () {
 
 
 
-       //faq list
-
-       $(".faq-list h3").on("clicn", function(){
-        $(".faq-list p").slideup(500);
-        $(this).siblings().slidedown(500)
-       })
-
+      //FAQ CLICK FUNCTION
+    $(".faq-rhs ul li h3").on("click", function () {
+        $(".faq-rhs p").slideUp(500);
+        $(this).siblings(".faq-rhs p").slideDown(500);
+        $(".faq-rhs ul li h3").removeClass("act");
+        $(this).addClass("act");
+    })
 
 
 //WORK SHOWCASE
