@@ -19,13 +19,7 @@
         flex-direction: column;
     }
 
-    .services-rhs li {
-        padding: 15px;
-    }
 
-    .ser-inner h2 {
-        display: block;
-    }
 }
 
 /*-------------------------------------------------------*/
@@ -42,7 +36,7 @@
     }
 	.testimonial-img{margin: 0;}
 	.contact-us{padding: 140px 0 0 0;}
-	.case-img{margin: 15px 0;}
+	
     .team-name {
         padding-top: 30px;
     }
@@ -71,29 +65,9 @@
         margin-bottom: 30px;
     }
 
-    .project-one-hover {
-        width: 100%;
-    }
-
-    .project-one-hover b {
-    }
-
-    .project-one-hover a {
-        font-size: 14px;
-    }
-
-    .case-img img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
+   
     .ser-inner {
         padding: 0;
-    }
-
-    .services {
-        padding: 80px 0 80px 0;
     }
 
 
@@ -110,16 +84,7 @@
         width: auto;
     }
 
-    .showcase .act2 {
-        transform: none;
-        padding: 0;
-    }
-
-    .work-showcase {
-        padding: 80px 0 0px 0;
-        margin-bottom: -15px;
-    }
-
+ 
     /*-------------------------*/
     .menu a:hover {
         color: #fff;
@@ -233,9 +198,7 @@
     }
     /*-------------------------*/
 
-    .work-showcase::before, .work-showcase::after {
-        display: none;
-    }
+  
 
     .blog-det-inn h3 {
         padding: 15px 0 18px 0;
@@ -315,7 +278,6 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width:767px) {
-	.tab-showcase{display: block;}
     .commen-banner {
         padding: 164px 0 92px 22px;
     }
@@ -353,10 +315,6 @@
     }
 
 
-    .services-rhs li {
-        width: 100%;
-        padding-left: 0;
-    }
 }
 
 /*-------------------------------------------------------*/
@@ -441,10 +399,7 @@
         line-height: 52px;
     }
 
-    .showcase li {
-        float: left;
-        margin: 0 16px 16px 0;
-    }
+ 
 
     .banner .ban-lhs .comm-btn {
         flex-direction: column;

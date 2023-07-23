@@ -9,10 +9,25 @@ $(document).ready(function () {
         $(".menu").removeClass("menuact");
     })
 
+
+    //check box values get
+
+    $(".inner-collections input").click(function(){
+
+        var _all = [];
+        $.each($(".inner-collections input:checked"), function(){
+            _all.push($(this).val());
+        });
+
+        var _showitms = _all.join(" , ");
+        $(".show-itmes").text(_showitms)
+    });
+
+    
   
     //BANNER ANIMATION
     $(".banner .ban-lhs").addClass("ani1");
-    $(".bann-img").addClass("ani2");
+  
 
 
     //TOP SEARCH
@@ -67,6 +82,14 @@ $(".showcase span").on("click", function(){
     $(".tab-showcase-main").hide();
     $("#" + _shcase + "_show").show();
 })
+
+//pop up
+$(".comm-btn a").click(function(){
+    $(".collect-wallet").addClass("act")
+});
+$(".collect-inner i").click(function(){
+    $(".collect-wallet").removeClass("act")
+});
 
 
 
