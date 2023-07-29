@@ -37,7 +37,6 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
-    .tab-showcase{display: block;}
 	.testimonial-img{margin: 0;}
 	.contact-us{padding: 140px 0 0 0;}
 	.case-img{margin: 15px 0;}
@@ -344,7 +343,7 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width:767px) {
-	
+	.tab-showcase{display: block;}
     .commen-banner {
         padding: 164px 0 92px 22px;
     }
