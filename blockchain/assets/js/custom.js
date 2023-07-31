@@ -12,7 +12,6 @@ $(document).ready(function () {
   
     //BANNER ANIMATION
     $(".banner .ban-lhs").addClass("ani1");
-    $(".bann-img").addClass("ani2");
 
 
     //TOP SEARCH
@@ -66,6 +65,17 @@ $(".showcase span").on("click", function(){
     var _shcase = $(this).attr("id");
     $(".tab-showcase-main").hide();
     $("#" + _shcase + "_show").show();
+})
+
+//tab
+
+$(".latest-blokchain-tab span").on("click", function(){
+    $(".latest-blokchain-tab span").removeClass("act");
+    $(this).addClass("act");
+    var _tab = $(this).attr("id");
+    $(".latest-blokchain-items").hide();
+    $("#" + _tab + "_view").show();
+
 })
 
 
