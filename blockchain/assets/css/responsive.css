@@ -9,9 +9,7 @@
 /*-------------------------------------------------------*/
 @media screen and (max-width:1200px) {
 
-    .team-member:before {
-        opacity: 0;
-    }
+  
 
     .clint-img {
         align-items: center;
@@ -43,13 +41,7 @@
 	.testimonial-img{margin: 0;}
 	.contact-us{padding: 140px 0 0 0;}
 
-    .team-name {
-        padding-top: 30px;
-    }
 
-    .team-img img {
-        height: auto;
-    }
 
     .con-det {
         padding: 40px 0 0 0;
@@ -63,14 +55,8 @@
         margin-bottom: 30px;
     }
 
-    .our-team {
-        padding-bottom: 30px;
-    }
-
-    .followers {
-        margin-bottom: 30px;
-    }
-
+  
+   
     .project-one-hover {
         width: 100%;
     }
@@ -244,12 +230,6 @@
         margin-top: 10px;
     }
 
-    .team-member {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
 
     .ban-inn {
         display: block;
@@ -361,9 +341,6 @@
     }
 
 
-    .our-team {
-        padding-top: 80px;
-    }
 
     .blog-post {
         padding-top: 0;

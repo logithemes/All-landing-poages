@@ -15,7 +15,9 @@
 */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Pacifico&family=Poppins:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 
 * {
     margin: 0px;
@@ -28,7 +30,7 @@
     line-height: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: #fff;
 }
@@ -51,7 +53,7 @@ body {
     line-height: 24px;
     margin: 0px;
     padding: 0px;
-    background: linear-gradient(90deg, #0b1628, #080d20);
+    background: #000 !important;
 }
 
 ol,
@@ -86,8 +88,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700 !important;
-    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
 }
 
 img {
@@ -97,16 +99,16 @@ img {
 
 a:hover {
     text-decoration: none  !important;
-    color: #fff  !important;
-}
 
+}
+p{line-height: 27px;font-size: 15px;}
 /*-------------------------------------------------*/
 /* BANNER
 /*-------------------------------------------------*/
 
 .banner {
     width: 100%;
-    padding: 150px 0 120px 0;
+    padding: 180px 0 120px 0;
     float: left;
     position: relative;
     overflow: hidden;
@@ -163,12 +165,14 @@ a:hover {
     transform: translateX(50%);
     transition: all 0.5s ease;
     opacity: 0;
+    text-align: center;
 }
 .banner .ban-lhs b{
     background: linear-gradient(to bottom, rgb(4 255 253), rgb(208 14 221));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
+    display: inline-block;
 }
 .banner .ban-lhs.ani1 {
     transform: translateX(0);
@@ -176,25 +180,41 @@ a:hover {
     opacity: 1;
     transition-delay: 0.5s;
 }
-
+.banner .ban-lhs::before, .banner .ban-lhs::after{
+    position: absolute;
+    content: "";
+    background: url(../images/img1/2.png);
+    left: 0;
+    top: 58%;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    }
+.banner .ban-lhs::after{    background: url(../images/img1/1.png);
+    left: auto;
+    right: 0;
+    background-size: cover;
+    width: 125px;
+    transform: rotate(35deg);}
 .ban-lhs h1 {
     font-weight: 700 !important;
-    font-size: 72px;
-    line-height: 91px;
+    font-size: 100px;
+    line-height: 110px;
     display: inline-block;
     text-transform: capitalize;
-    padding: 0 0 20px 0;
     position: relative;
 }
 
 
-
-.ban-lhs p {
-    font-size: 16px;
-    padding: 0 47px 0 0;
-
-    margin: 0 0 0 0;
-    line-height: 25px;
+.ban-lhs h1::before{    position: absolute;
+    content: "";
+    background: url(../images/icons/2.svg);
+    top: -29px;
+    left: -55px;
+    background-size: cover;
+    width: 88px;
+    height: 63px;
+    z-index: -1;
 }
 
 
@@ -236,25 +256,45 @@ a:hover {
     align-items: center;
 }
 
-.ban-img{}
+.ban-img{position: relative;display: flex;align-items: center;justify-content: center;margin-top: 0px;width: 100%;height: 100%;}
+.ban-img::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 44%;
+    background: url(../images/img1/5.png);
+    width: 160px;
+    height: 120px;
+    transform: rotate(-45deg);
+    background-size: cover;
+}
+.ban-img .shapes1{
+    position: absolute;
+    content: "";
+    animation: rotate 25.8s infinite linear;
+    top: 63%;
+    width: 600px;
+    height: 600px;
+    right: -21px;
+    z-index: -1;
+    }
+    @keyframes rotate{
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100% {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+    
 .ban-img img{
-    animation: move 4.8s infinite linear;
-    transition: all 0.5s ease;
-    animation-delay: 1s;
+    
+animation-delay: 1s;
+    
+max-width: 73%;
 }
 
-@keyframes move{
-    0% {
-        filter: drop-shadow(1px 0 0 #000) drop-shadow(-1px 0 #000)    drop-shadow(0 1px 0 #000) drop-shadow(0 -1px 0 #000)    drop-shadow(-3px -3px 0 #000) drop-shadow(0px 0px 0 #000)    drop-shadow(-10px 0px 0 #000) drop-shadow(-0px -0px 0 #000);
-    }
-  
-   
-   
-    100% {
-      filter:  filter: drop-shadow(1px 0 0 #000) drop-shadow(-1px 0 #000)    drop-shadow(0 1px 0 #000) drop-shadow(0 -1px 0 #000)    drop-shadow(-3px -3px 0 #000) drop-shadow(0px 0px 0 #000)    drop-shadow(-10px 0px 0 #000) drop-shadow(-0px -0px 0 #000);
-    }
 
-}
 
 
 
@@ -298,25 +338,13 @@ a:hover {
 	float: left;
 	width: 100%;
 	position: relative;
-	padding-top: 120px;
+	padding-top: 160px;
 	padding-bottom: 140px;
 	overflow: hidden;
 	background: url(../images/banner/bg2.jpg);
 	background-position: right;
 }
 
-.rotate-shapes span {
-	bottom: -16px;
-	position: absolute;
-	content: "";
-	width: 30px;
-	height: 30px;
-	left: 100px;
-	background: #ff9800;
-	animation: rotate 10s infinite linear;
-	border-radius: 5px;
-	z-index: 1;
-}
 
 .rs1 span {
 	left: auto;
@@ -489,10 +517,10 @@ a:hover {
 }
 
 .abt-student-img .student-img1 {
-	right: 0;
-	top: 70px;
-	width: 290px;
-	height: 430px;
+	right: 30px;
+	top: -25px;
+	width: 250px;
+	height: 275px;
 	border-radius: 100px 0 100px 100px;
 }
 
@@ -500,10 +528,15 @@ a:hover {
 	transform: translateX(10px);
 }
 
-.abt-student-img .student-img2 {
+.abt-student-img .student-img2, .abt-student-img .student-img3{
 	bottom: -6px;
 	left: 30px;
-	border-radius: 50px;
+	border-radius: 50px 50px 50px 0;
+}
+.abt-student-img .student-img3{
+    left: auto;
+    right: 30px;
+    border-radius: 50px 50px 0px 50px;
 }
 
 .abt-student-img .student-img2:hover {
@@ -513,13 +546,13 @@ a:hover {
 .abt-student-img:before {
 	position: absolute;
 	content: "";
-	background: url(../images/img1/shapes.png);
+	background: url(../images/img1/2.png);
 	background-size: cover;
-	width: 100%;
-	height: 100%;
-	animation: rotate 10s infinite linear;
+	width: 80px;
+	height: 80px;
+	animation: rotate 20s infinite linear;
 	left: 50%;
-	top: 54%;
+	top: 47%;
 }
 
 
@@ -536,7 +569,6 @@ a:hover {
 .latest-blokchain-tab{
     float: left;
     width: 100%;
-    margin-top: 28px;
     text-align: center;
     position: relative;
     padding: 30px;
@@ -564,11 +596,11 @@ a:hover {
     cursor: pointer;
     transition: all 0.5s ease;
 }
-.latest-blokchain-tab .act{background: #46a0fa;color: #000;transition: all 0.5s ease;}
+.latest-blokchain-tab .act{background: #371465;color: #fff;transition: all 0.5s ease;}
 .latest-blokchain-top{
     float: left;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .latest-blokchain-items{
     float: left;
@@ -614,19 +646,6 @@ a:hover {
 }
 .fun-fact-inner::before, .fun-fact-inner::after{position: absolute;content: "";top: 0;left: 0;right: 0;width: 100%;height: 1px;background: linear-gradient(45deg, #8b1fb700, #52a3f1, #654fff05);}
 .fun-fact-inner::after{top: auto;bottom: 0;}
-.why-choose-box .services-box-inner:first-child{
-    border-left: 2px solid #FFCE22;
-}
-.why-choose-box .services-box-inner:nth-child(2){
-    border-left: 2px solid #8F6BF6;
-}
-.why-choose-box .services-box-inner:nth-child(3){
-    border-left: 2px solid #63EAA9;
-}
-.why-choose-box .services-box-inner:last-child{
-    border-left: 2px solid #FF5C5C;
-}
-
 
 
 /*-------------------------------------------------*/
@@ -1071,6 +1090,8 @@ top: 9px;
     display: block;
     padding: 15px 0 15px 0;
     margin-bottom: 0;
+    font-size: 43px;
+    line-height: 50px;
 }
 
 .inn img {
@@ -1083,14 +1104,14 @@ top: 9px;
 .comm-btn {
     position: relative;
     text-transform: capitalize;
-    margin: 65px 0 0 0;
-    float: left;
+    margin: 34px 0 0 0;
+    /* float: left; */
     width: 100%;
 }
 .comm-btn i{}
 
 .comm-btn a {
-    padding: 20px 95px 20px 57px;
+    padding: 16px 80px;
     border: 2px solid #569ef0;
     color: #fff;
     text-decoration: none;
@@ -1167,7 +1188,7 @@ top: 9px;
     float: left;
     text-align: center;
     /* overflow: hidden; */
-    margin-top: -75px;
+    margin-top: -122px;
     background: #030222;
 }
 
@@ -1252,8 +1273,8 @@ top: 9px;
     color: #fff;
     font-size: 22px;
     border-radius: 50%;
-    width: 64px;
-    height: 66px;
+    width: 54px;
+    height: 55px;
     text-align: center;
     background: rgb(86 158 240);
     position: absolute;
@@ -1263,17 +1284,18 @@ top: 9px;
     align-items: center;
     justify-content: center;
     transform: rotate(-45deg);
+    display: none;
 }
 
 .services {
     float: left;
     width: 100%;
-    padding: 100px 0 200px 0;
+    padding: 0 0 100px 0;
     position: relative;
     /* background: #f5f5fd; */
     overflow: hidden;
 }
-
+.services button{display: none !important;}
 .ser-inner {
     text-transform: capitalize;
     justify-content: center;
@@ -1287,7 +1309,7 @@ top: 9px;
 
 .ser-inner h2 {
     display: inline-block;
-    margin: 0 0 14px 0;
+    margin: 0 0 30px 0;
     font-size: 43px;
     letter-spacing: -1px;
 }
@@ -1301,34 +1323,34 @@ top: 9px;
     height: 100%;
 }
 
-.services-det:before {
+.services-det:before{
     position: absolute;
     content: "";
-    right: -2px;
-    bottom: -2px;
-    width: 40px;
-    background: #329cf9;
-    height: 40px;
-    z-index: -1;
+    right: -9px;
+    bottom: -8px;
+    width: 60px;
+    background: url(../images/icons/shapes.png);
+    height: 60px;
+    background-size: cover;
+    transform: scale(-1);
+    z-index: 1;
 }
 
 .services-det::after {
     position: absolute;
     content: "";
-    top: -2px;
-    width: 40px;
-    height: 39px;
-    left: -2px;
-    background: #46a0fa;
-    z-index: -1;
+    right: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 1px;
+    background: #B6E77E;
+    height: 0;
+    left: 0;
+    transition: all 0.5s ease;
 }
-
-
-
-.services-det:hover::after {
-    bottom: -10px;
-    right: -10px;
-}
+.services-det:hover::after{    height: 100%;
+    top: 0;
+    bottom: auto;}
 
 @keyframes rotate {
 
@@ -1357,13 +1379,14 @@ top: 9px;
 .services-det {
     position: relative;
     width: 100%;
-    border-radius: 3px;
+    border-radius: 20px;
     text-transform: capitalize;
     float: left;
     padding: 44px 40px 43px 40px;
     border: 1px solid #2f4797;
     text-align: center;
-    background: #18264f;
+    background: #000000;
+    overflow: hidden;
 }
 
 
@@ -1375,149 +1398,23 @@ top: 9px;
     position: relative;
     font-weight: 500 !important;
     font-size: 32px;
+    z-index: 1;
 }
 .services-det img{
     position: relative;
     width: 100px;
+    z-index: 1;
 }
 .services-det p {
     font-size: 14px;
     position: relative;
     padding-bottom: 15px;
     line-height: 28px;
+    z-index: 1;
 }
 
 
-/*-------------------------------------------------*/
-/* our-team
-/*-------------------------------------------------*/
 
-.our-team {
-    float: left;
-    width: 100%;
-    position: relative;
-    padding: 120px 0 120px 0;
-   
-    overflow: hidden;
-}
-
-.team-inner {
-    float: left;
-    width: 100%;
-}
-
-.team-member {
-    position: relative;
-    width: 100%;
-    z-index: 9;
-    float: left;
-    transition: all 0.5s ease;
-}
-
-.team-member:hover {
-    transform: translateX(-10px);
-    transition: all 0.5s ease;
-}
-
-.team-member:before {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 20px;
-    top: 0;
-    left: 0;
-    animation: rotate 4s infinite linear;
-    z-index: 99;
-    background: url(../images/icons/bitcoin-01.png);
-    background-size: contain;
-}
-
-.team-img {
-    float: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s ease;
-    width: 100%;
-}
-
-.team-img:hover::after {
-    transform: translateY(-20px) scale(1.7);
-    transition: all 0.5s ease;
-}
-
-.team-img::after {
-    position: absolute;
-    content: "";
-    background: url(../images/background/1.png);
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    z-index: -1;
-    transform: translateY(0) scale(0);
-    transition: all 0.5s ease
-}
-
-.team-img:hover {
-    transition: all 0.5s ease;
-}
-
-.team-img::before {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: linear-gradient(354deg, #fe0e0eab, transparent);
-}
-
-
-.team-member:hover .team-img .team-det {
-    transform: scale(1);
-    transition: all 0.5s ease;
-    transition-delay: 0.4s;
-}
-
-.team-img img {
-    width: 100%;
-    float: left;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.team-img .team-det {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 20px;
-    transition: all 0.5s ease;
-    transition-delay: 0.4s;
-    transform: scale(0);
-}
-
-.team-name {
-    position: relative;
-    position: absolute;
-    bottom: 58px;
-}
-
-.team-name h5 {
-    margin-bottom: 0;
-}
-
-
-.team-radius:before {
-    border-radius: 5px;
-}
 
 .radius {
     border-radius: 5px !important;
@@ -1536,7 +1433,7 @@ top: 9px;
     float: left;
     width: 100%;
     position: relative;
-    padding: 0 0 120px 0;
+    padding: 60px 0 100px 0;
     overflow: hidden;
 }
 
@@ -1684,29 +1581,7 @@ top: 9px;
 .comments-c-change i {
 }
 
-.followers {
-    position: absolute;
-    bottom: 0;
-}
 
-.followers ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.followers li {
-    padding: 0 20px;
-    border-right: 1px solid #ddd;
-}
-
-.followers i {
-    color: #fff;
-}
-
-.followers ul li:last-child {
-    border-right: 0;
-}
 
 .align-items-center {
     width: 100%;
@@ -1896,27 +1771,6 @@ top: 9px;
     background: #eeee;
 }
 
-.shapes-group {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -1;
-}
-
-.shapes-group .sh1 {
-    position: absolute;
-    bottom: 79px;
-    left: 0;
-    background: url(../images/background/3.png);
-    background-size: cover;
-    width: 400px;
-    height: 207px;
-    z-index: 0;
-    opacity: .4;
-}
 
 .contact-following {
     float: left;
@@ -3249,33 +3103,47 @@ side-panel-con ul {
 }
 
 
+
 /*-------------------------------------------------*/
-/* collect wallet 
+/* Crypto Investing  
 /*-------------------------------------------------*/
 
-.collect-wallet{
-    display: flex;
-    align-items: center;
-    justify-content: center;display: none;
-}
-.collect-inner{
-    position: fixed;
-    top: 10%;
-    background: #fff;
-    z-index: 9999;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    padding: 50px;
-}
-.collect-inner ul{}
-.collect-inner li{
-    margin: 13px 0;
-}
-.collect-inner div{}
-.inner-collections input{}
-.inner-collections .btn-submit{}
-.input1{
+.crypto-investing{
+    position: relative;
+    float: left;
     width: 100%;
-    border: 1px solid;
-    padding: 10px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
-.btn-submit{}
+.investing{
+    padding-right: 50px;text-align: left;
+}
+.investing .comm-btn{
+    margin-top: 0;
+}
+
+.investing-img{position: relative;display: flex;align-items: center;justify-content: center;}
+.investing-img::before{position: absolute;content: "";background: url(../images/img1/3.png);background-size: cover;width: 550px;height: 550px;z-index: -1;animation: rotate 20s infinite linear;left: 53%;top: 55%;}
+
+/*-------------------------------------------------*/
+/*  oru-community
+/*-------------------------------------------------*/
+
+.oru-community{
+    padding-top: 0;
+}
+.oru-community .investing{
+    padding-right: 0;
+    padding-left: 50px;
+}
+.oru-community{}
+.oru-community .investing-img{
+    padding: 50px 50px 50px 0;
+}
+.oru-community .investing-img::before{}
+.{}
+.{}
+.{}
+.{}
+.{}
+
