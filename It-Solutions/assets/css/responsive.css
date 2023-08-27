@@ -8,10 +8,49 @@
 /* When the browser is 1200px to all small screens,below css will be applied.
 /*-------------------------------------------------------*/
 @media screen and (max-width:1200px) {
+    .faq .comm-heading{margin: 0;}
+    .faq::before{display: none;}
+    .team-img img{/* width: 270px !IMPORTANT; *//* height: 270px !important; */padding: 0;}
+
+    .team-img::before{left: 0;}
+    .services-box{padding-bottom: 0;}
 
     .team-member:before {
         opacity: 0;
     }
+    .about-content {
+        width: 100%;
+        padding: 0;
+        padding-top: 125px !important;
+    }
+    .abt-benefits{}
+    .abt-student-img {
+        width: 100%;
+        left: 0;
+        margin-top: 80px;
+    }
+
+    .abt-student-img .student-img, .abt-student-img .student-img1, .abt-student-img .student-img2 {
+        position: absolute;
+        width: 50%;
+        padding: 10px;
+    }
+
+    .abt-student-img .student-img {
+        left: 0;
+        display: block;
+    }
+
+    .abt-student-img .student-img1 {
+        float: right;
+        position: relative;
+    }
+
+    .abt-student-img .student-img2 {
+        bottom: -85px;
+        left: 0;
+    }
+
 
     .clint-img {
         align-items: center;
@@ -33,15 +72,27 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
+    .group-img{justify-content: center;width: 100%;}
     .about-us {
         padding: 0 15px;
+
     }
+    .why-choose-box{display: block;}
+    .footer{padding: 80px 0 60px 0;}
+    .tab-showcase{display: block;}
+    .ban-img{display: inline-block;margin-top: 35px;}
+    .ban-img img{transform: scale(1);}
+    .about-us{padding-top: 0;}
     .about-content {
         width: 100%;
         padding: 0;
     }
+  
 	.testimonial-img{margin: 0;}
-	.contact-us{padding: 140px 0 0 0;}
+    .testimonial{padding: 80px 0 80px;}
+    .faq{padding-bottom: 80px;}
+    .blog-post{padding-bottom: 100px;}
+	.contact-us{padding: 80px 0 0 0;}
 	.case-img{margin: 15px 0;}
     .team-name {
         padding-top: 30px;
@@ -52,7 +103,7 @@
     }
 
     .con-det {
-        padding: 40px 0 0 0;
+    margin-top: 20px;
     }
 
     .post-left {
@@ -100,10 +151,12 @@
 
     .services-box-inner {
         margin-bottom: 30px;
+        width: 50%;
     }
 
     .services-box {
-        margin-top: 60px;
+        margin-top: 0;
+        padding-top: 80px;
     }
 
     .auther-in-im {
@@ -143,9 +196,9 @@
     }
 
     .side-bar-right i {
-        width: 35px;
-        height: 35px;
-        font-size: 15px;
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
     }
 
     .logo img {
@@ -262,6 +315,7 @@
         display: flex;
         align-items: center;
         margin: 10px 0;
+        text-align: center;
     }
 
     .foo-deati {
@@ -296,7 +350,7 @@
     }
 
     .banner {
-        padding-bottom: 129px;
+        padding-bottom: 0;
         padding-top: 150px;
     }
 
@@ -315,6 +369,15 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width:767px) {
+    .contact-map iframe{}
+    .contact-map::before, .contact-map::after{display: none;}
+    .contact-map{padding: 0;margin-top: 0;}
+    .team-img::before{left: auto;right: auto;}
+    .services-box-inner {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
 	.tab-showcase{display: block;}
     .commen-banner {
         padding: 164px 0 92px 22px;
@@ -363,7 +426,25 @@
 /* When the browser is 576px to all small screens,below css will be applied.
 /*-------------------------------------------------------*/
 @media screen and (max-width:576px) {
-	
+    .about-content{padding-top: 0  !important;}
+    .abt-student-img .student-img, .abt-student-img .student-img1, .abt-student-img .student-img2 {
+        width: 100% !important;
+        position: relative;
+        left: 20px !important;
+    }
+    .abt-student-img .student-img1 {
+        position: relative;
+        top: -25px;
+        height: 275px;
+        left: 0;
+    }
+    .abt-student-img .student-img2 {
+        top: -25px;
+    }
+    .abt-student-img .student-img{
+    right: 0;
+    left: 0;
+}
 	.services-box{margin-bottom: 40px;}
 	
 	
@@ -431,10 +512,13 @@
 }
 
 @media screen and (max-width:480px) {
+    .post-left::before{    width: 80px;
+        height: 69px;right: 0;}
+    .abt-benefits li{width: 100%;}
     .fun-fact-inner li {
         width: 100%;
     }
-
+    .comm-heading h2{font-size: 32px;line-height: 39px;}
 
     .ban-lhs h1{
         font-size: 40px;

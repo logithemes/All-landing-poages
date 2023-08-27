@@ -8,8 +8,16 @@
 /* When the browser is 1200px to all small screens,below css will be applied.
 /*-------------------------------------------------------*/
 @media screen and (max-width:1200px) {
-
-  
+    .faq .comm-mani-heading{
+    margin-bottom: 62px;
+}
+    .ban-lhs h1::before{display: none;}
+    .about-content {
+        width: 100%;
+        padding: 0;
+    }
+    .abt-student-img{width: 100%;margin-top: 60px;}
+    .abt-student-img img{position: relative;width: 50% !important;top: 0 !important;left: 0 !important;right: 0 !important;bottom: 0 !important;float: left;border-radius: 10px !important;padding: 10px;}
 
     .clint-img {
         align-items: center;
@@ -31,20 +39,57 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
+    .testimonial1{padding-top: 0;}
+    .ban-img img{max-width: 100%;}
+    .ban-img .shapes1{display: none;}
+    .about-content{margin-top: 50px;}
+    .start-crypto .start-left{padding-right: 0;text-align: center;}
+    .start-crypto h2 {font-size: 24px;line-height: 32px;}
+    .start-crypto p{font-size: 16px;}
+    .oru-community .investing-img{
+    padding-top: 0;
+    padding-right: 0;
+}
+    .fun-fact-inner li{width: 100%;padding-bottom: 0;}
+    .fun-fact-inner li::after{display: none;}
+    .latest-blokchain-tab::before, .latest-blokchain-tab li::after{display: none;}
+    .latest-blokchain-tab .act{    background: #fff;
+        color: #000;}
+        .crypto-investing{padding-top: 80px;padding-bottom: 0;}
+        .comm-heading h2{
+            font-size: 26px;
+            line-height: 40px;
+        }
+        .latest-blokchain-tab{padding: 30px 0 30px 0;}
+        .list-items h4{font-size: 15px;line-height: 26px;margin-top: 6px;}
+    .ban-img::before{
+    width: 65px;
+    height: 50px;
+}
+    .ban-img{
+    margin-top: 20px;
+}
+    .banner .ban-lhs::before{
+    width: 55px;
+    height: 55px;
+}
+    .banner .ban-lhs::after{
+    width: 55px;
+    height: 51px;
+}
     .about-us {
         padding: 0 15px;
+        margin-top: 50px;
     }
-    .about-content {
-        width: 100%;
-        padding: 0;
-    }
+   
 	.testimonial-img{margin: 0;}
-	.contact-us{padding: 140px 0 0 0;}
+	.contact-us{padding: 80px 0 0 0;}
 
 
 
     .con-det {
-        padding: 40px 0 0 0;
+        /* padding: 40px 0 0 0; */
+        margin-top: 60px;
     }
 
     .post-left {
@@ -108,9 +153,9 @@
     }
 
     .side-bar-right i {
-        width: 35px;
-        height: 35px;
-        font-size: 15px;
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
     }
 
     .logo img {
@@ -243,6 +288,8 @@
 
     .ban-lhs h1 {
         padding: 0;
+        font-size: 60px;
+        line-height: 63px;
     }
 
 
@@ -272,8 +319,12 @@
     }
 
    
-
-
+    .latest-blokchain-tab ul{display: block;}
+    .latest-blokchain-tab li{
+    float: left;
+    width: 33.333%;
+    margin-bottom: 14px;
+}
    
 
     .footer::before, .footer::after, .testimonial::before, .testimonial::after {
@@ -304,7 +355,7 @@
 
     .services-rhs li {
         width: 100%;
-        padding-left: 0;
+        padding: 0;
     }
 }
 
@@ -312,12 +363,19 @@
 /* When the browser is 576px to all small screens,below css will be applied.
 /*-------------------------------------------------------*/
 @media screen and (max-width:576px) {
+    .abt-student-img img{
+    width: 100% !important;
+    height: auto;
+}
+    .abt-benefits li{width: 100%;}
+    .latest-blokchain-items li{width: 50%;margin-bottom: 15px;}
 	
 	.services-box{margin-bottom: 40px;}
 	
 	
     .post-left img {
         height: 400px;
+        width: 100%;
     }
 
     .services-rhs {
@@ -343,8 +401,8 @@
 
 
     .blog-post {
-        padding-top: 0;
-        padding-bottom: 50px;
+        /* padding-top: 0; */
+        padding-bottom: 0;
     }
 
     .testimonial {
@@ -353,8 +411,8 @@
     }
 
     .footer {
-        padding-top: 100px;
-        padding-bottom: 80px;
+        padding-top: 80px;
+        padding-bottom: 60px;
     }
 
     .inner-text h3 {
@@ -377,11 +435,14 @@
 }
 
 @media screen and (max-width:480px) {
+    .ser-inner h2{font-size: 28px;line-height: 37px;}
+    .oru-community .investing{padding-left: 0;}
     .fun-fact-inner li {
         width: 100%;
     }
+    .comm-btn a{padding: 16px 42px;}
 
-
+    .latest-blokchain-tab li{width: 50%;}
     .ban-lhs h1{
         font-size: 40px;
         line-height: 52px;

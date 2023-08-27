@@ -583,7 +583,7 @@ transform: scale(1.2);
     transform-origin: left;
 }
 
-.why-choose-box{display: flex;margin-top: 40px;}
+.why-choose-box{display: flex;margin-top: 0;}
 
 
 .services-box img {max-width: 170px;max-height: 170px;object-fit: cover;}
@@ -2533,7 +2533,7 @@ color: #fff;
 }
 
 .case-img:hover .project-one-hover {
-    /* transform: rotateX(0deg); */
+    transform: scale(1);
     transition: all 0.5s ease;
 }
 
@@ -3487,5 +3487,5 @@ color: #fff;
 }
 
 
-.corsor{position: fixed;top: 0;left: 0;background: gold;z-index: 999;width: 100px;height: 100px;pointer-events: none;}
+
 

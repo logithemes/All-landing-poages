@@ -1453,7 +1453,7 @@ side-panel-con ul {
     float: left;
     width: 100%;
     position: relative;
-    padding: 140px 0 120px 0;
+    padding: 140px 0 80px 0;
     text-align: center;
     overflow: hidden;
 }
@@ -1577,7 +1577,7 @@ side-panel-con ul {
     float: left;
     width: 100%;
     position: relative;
-    padding: 0 0 120px 0;
+    padding: 0 0 100px 0;
     overflow: hidden;
 }
 
@@ -1890,7 +1890,7 @@ side-panel-con ul {
 
 .contact-us {
     position: relative;
-    padding: 100px 0 0 0;
+    padding: 0 0 0 0;
     /* display: none; */
     /* background: #fff; */
     overflow: hidden;
@@ -1901,10 +1901,12 @@ side-panel-con ul {
     width: 100%;
     float: left;
     padding: 60px;
-    background: #fff;
+    background: #f0f2ff;
     position: relative;
+    z-index: 3;
 }
-.con-det::before{position: absolute;content: "";top: -31px;left: -44px;background: url(../images/icons/2.svg);width: 66px;height: 47px;background-size: cover;}
+.con-det::before{position: absolute;content: "";bottom: 0;right: -230px;background: url(../images/background/shape-2.png);width: 100%;background-size: cover;height: 100%;}
+.con-det::after{position: absolute;content: "";background: url(../images/background/shape-2.png);}
 .con-det h2{
     font-size: 40px;
     letter-spacing: -2px;
@@ -1916,6 +1918,8 @@ side-panel-con ul {
 .contact-form {
     float: left;
     width: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .contact-form ul {
@@ -1939,7 +1943,7 @@ side-panel-con ul {
     border: none;
     padding: 15px 15px 15px 15px;
     border-radius: 5px;
-    background: #f0f2ff;
+    background: #fff;
 }
 
 .contact-form .sub-btn {

@@ -68,13 +68,6 @@ $(".showcase span").on("click", function(){
     $("#" + _shcase + "_show").show();
 })
 
-//WORK SHOWCASE
-$(".case-img").mousemove(function(event){
-    var _x = event.pageX + "px";
-    var _y = event.pageY + "px";
-    $(".project-one-hover").css({left: _x, top: _y})
-    $(".project-one-hover").css("transform", "scalex(1)")
-})
 
 
 
@@ -99,10 +92,4 @@ $(window).on("scroll", function(){
 });
 
 
-$(document).mousemove(function(event){
-    var _x = event.pageX + "px";
-    var _y = event.pageY + "px";
-    $(".corsor").css({'transform' : 'translate(' + _x +', ' + _y + ')'});
-   
-    
-});
+
