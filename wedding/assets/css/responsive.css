@@ -32,6 +32,29 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
+    .footer{
+    padding: 90px 0 70px 0;
+}
+    .con-det::before{
+    border: 19px solid #cde0ef;
+}
+    .contact-us::before{
+    width: 300px;
+    height: 400px;
+    opacity: .1;
+}
+    .testimonial{
+    padding-bottom: 0;
+}
+    .contact-us{}
+    .con-det{}
+    .wpo-event-item{border-right: 0;border-top: 0;/* border-bottom: 0; */}
+    .our-love-story .love-story-content1{
+    margin-top: 0;
+    margin-bottom: 70px;
+    order: 1;
+}
+    .services .container::before, .services .container::after{width: 100px;height: 100px;}
     .fun-fact-inner{padding: 0;}
     .fun-fact-inner li{padding: 15px;}
     .services{padding: 80px 0 130px 0;}
@@ -41,9 +64,7 @@
         margin-bottom: 50px;}
     .couple-img{padding-right: 0;padding-left: 0;}
     .lovelove-couple::before{display: none;}
-    .banner .ban-lhs{}
-    .banner .ban-lhs::before{}
-    .banner .ban-lhs::after{}
+   
 
     .about-us {
         padding: 0 15px;
@@ -53,7 +74,7 @@
         padding: 0;
     }
 	.testimonial-img{margin: 0;}
-	.contact-us{padding: 140px 0 0 0;}
+	.contact-us{padding: 50px 0 0 0;}
 	.case-img{margin: 15px 0;}
     .team-name {
         padding-top: 30px;
@@ -63,10 +84,8 @@
         height: auto;
     }
 
-    .con-det {
-        padding: 40px 0 0 0;
-    }
-
+   
+    1
     .post-left {
         margin-top: 35px;
     }
@@ -77,6 +96,7 @@
 
     .our-team {
         padding-bottom: 30px;
+        padding-top: 100px;
     }
 
     .followers {
@@ -124,9 +144,9 @@
     }
 
     .side-bar-right i {
-        width: 35px;
-        height: 35px;
-        font-size: 15px;
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
     }
 
     .logo img {
@@ -284,7 +304,7 @@
 
    
     .post-right {
-        margin-top: 25px;
+        margin-top: -16px;
     }
 
     .small-img img {
@@ -297,6 +317,30 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width:767px) {
+    .fun-fact-inner ul{
+}
+    .banner .ban-lhs{
+    padding: 40px 15px 80px 15px;
+}
+    .ban-lhs h1{
+    font-size: 40px;
+    line-height: 41px;
+}
+    .ban-lhs p{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+    .fun-fact-inner li{
+    padding-bottom: 0;
+    width: 100%;
+}
+    .number img{
+    right: auto;
+    margin-left: 162px;
+}
+    .ban-inn{}
 	.tab-showcase{display: block;}
     .commen-banner {
         padding: 164px 0 92px 22px;

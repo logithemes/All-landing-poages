@@ -3,4 +3,5 @@ it solution pending work
 2-why choose us section add
 3-blog details img chages
 4-bannner group img changes
+5-all hover effects
 

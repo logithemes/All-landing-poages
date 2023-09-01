@@ -1,15 +1,7 @@
-Wedding websites sectios
-
-1-banner
-2-number rating
-3-center img and left and right ing sectiosn
-4-Our Services
-5-Our Story
-6-WHEN AND WHERE
-6-gallery
-7-testimonails
-8-team mates
-9-blog
-10-contact us
-11-footer
-
+wedding template pedding itwems
+1-img chanes
+2- aninmations
+3-blog
+4-responsive
+5-unwanted css and img html
+6-all hover effects
