@@ -1081,14 +1081,34 @@ side-panel-con ul {
     background: #82cefd;
     text-transform: uppercase;
     letter-spacing: 2px;
+    z-index: 6;
 }
-
-.comm-btn a:hover {
+.comm-btn a::before{
+    position: absolute;
+    height: 2px;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: scalex(0);
     background: #3c3ddc;
+    transform-origin: right;
+    height: 100%;
+    z-index: 0;
+    }
+    .comm-btn a:hover:before{    transform: scalex(1);
+        transform-origin: left;}
+
+.comm-btn a:hover span{
+   
     text-decoration: none;
     color: #fff;
 }
-
+.comm-btn span{
+    position: relative;
+    font-weight: 600;
+}
 .comm-btn .bg-none:after {
     display: none;
 }
@@ -1168,6 +1188,7 @@ side-panel-con ul {
     justify-content: center;
     flex-direction: column;
     text-transform: capitalize;
+    transition: all 0.4s ease;
 }
 
 

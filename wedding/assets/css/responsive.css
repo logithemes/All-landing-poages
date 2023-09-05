@@ -48,7 +48,7 @@
 }
     .contact-us{}
     .con-det{}
-    .wpo-event-item{border-right: 0;border-top: 0;/* border-bottom: 0; */}
+    .wpo-event-item{border-right: 0;border-top: 0;/* border-bottom: 0; *//* padding-top: 0; */}
     .our-love-story .love-story-content1{
     margin-top: 0;
     margin-bottom: 70px;
@@ -317,6 +317,9 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width:767px) {
+    .comm-heading h2{font-size: 33px;line-height: 40px;}
+    .contact-map{padding: 0;}
+    .plac-gal-imag{width: 100%;}
     .fun-fact-inner ul{
 }
     .banner .ban-lhs{
@@ -382,6 +385,7 @@
     .services-rhs li {
         width: 100%;
         padding-left: 0;
+        padding-top: 0;
     }
 }
 
@@ -389,6 +393,9 @@
 /* When the browser is 576px to all small screens,below css will be applied.
 /*-------------------------------------------------------*/
 @media screen and (max-width:576px) {
+    .services .container{
+    padding: 0 23px;
+}
 	
 	.services-box{margin-bottom: 40px;}
 	
@@ -398,7 +405,7 @@
     }
 
     .services-rhs {
-        margin-top: 30px;
+        margin-top: 0;
     }
 
     .contact-following {
@@ -415,15 +422,17 @@
 
     .comm-heading {
         width: 100%;
+        text-align: center;
     }
 
 
     .our-team {
         padding-top: 80px;
+        padding-bottom: 0;
     }
 
     .blog-post {
-        padding-top: 0;
+        padding-top: 56px;
         padding-bottom: 50px;
     }
 

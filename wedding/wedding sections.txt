@@ -5,3 +5,7 @@ wedding template pedding itwems
 4-responsive
 5-unwanted css and img html
 6-all hover effects
+
+
+ wow bounce" data-wow-duration="0.2s
+animate__shakeX
