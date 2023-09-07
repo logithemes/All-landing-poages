@@ -15,7 +15,6 @@
 */
 
 
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 * {
@@ -107,7 +106,7 @@ p{line-height: 27px;font-size: 15px;}
 
 .banner {
     width: 100%;
-    padding: 180px 0 20px 0;
+    padding: 130px 0 20px 0;
     float: left;
     position: relative;
     overflow: hidden;
@@ -249,7 +248,7 @@ p{line-height: 27px;font-size: 15px;}
 .ban-img{}
 .ban-img img{
  
-transform: scale(1.2);
+/* transform: scale(1.2); */
 }
 
 
@@ -296,8 +295,7 @@ transform: scale(1.2);
 }
 
 .brand-inner li .brand-img {
-	width: 120px;
-
+	/* width: 120px; */
 }
 
 .brand-inner  button {
@@ -571,7 +569,7 @@ transform: scale(1.2);
     left: 0;
     right: 0;
     transition: transform 0.3s ease-in-out;
-    background: #7fffd4;
+    background: #fff;
     transform: scalex(0);
     transform-origin: right;
     height: 100%;
@@ -859,7 +857,7 @@ side-panel-con ul {
     font-size: 14px;
     text-transform: initial;
     padding-top: 4px;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .side-bar-im i {
@@ -1062,9 +1060,11 @@ side-panel-con ul {
 }
 
 .comm-heading h2 {
+    font-size: 40px;
     display: block;
     padding: 15px 0 15px 0;
     margin-bottom: 0;
+    line-height: 44px;
 }
 
 .inn img {
@@ -1081,7 +1081,12 @@ side-panel-con ul {
     float: left;
     width: 100%;
 }
-
+.comm-btn span{
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.5s ease;
+    position: relative;
+}
 .comm-btn a {
     padding: 23px 62px;
     color: #FFF;
@@ -1095,9 +1100,24 @@ side-panel-con ul {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
+.comm-btn a::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+    background: #456da7;
+    transform: scalex(0);
+    transform-origin: right;
+    }
+    .comm-btn a:hover:before{
+        transform: scalex(1);
+        transform-origin: left;
+    }
 .comm-btn a:hover {
-    background: #3c3ddc;
+    /* background: #3c3ddc; */
     text-decoration: none;
     color: #fff;
 }
@@ -1320,11 +1340,6 @@ side-panel-con ul {
 }
 
 .ser-inner h2 {
-    display: inline-block;
-    margin: 0 0 30px 0;
-    font-size: 43px;
-    letter-spacing: -1px;
-    line-height: 48px;
 }
 
 
@@ -1343,7 +1358,7 @@ side-panel-con ul {
     bottom: 0px;
     width: 100%;
     height: 1px;
-    background: #8d99ff;
+    background: #456da7;
     height: 0;
     left: 0;
     transition: all 0.5s ease;
@@ -1708,15 +1723,18 @@ side-panel-con ul {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    float: left;
 }
 
+.post-right li:hover .small-img img{transform: scale(1.1);transition: all 0.5s ease;}
+
 .small-img {
-    width: 100%;
+    width: 100%;overflow: hidden;
     height: 100%;
 }
 
 .small-img img {
-    border-radius: 2px;
+    border-radius: 2px;transition: all 0.5s ease;
 }
 
 .post-content-1 a {
@@ -1830,6 +1848,7 @@ side-panel-con ul {
     width: 100%;
     display: block !important;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .testimonial1 {
@@ -1984,28 +2003,6 @@ side-panel-con ul {
     margin-top: 15px;
     border: 1px solid #eee;
     background: #eeee;
-}
-
-.shapes-group {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -1;
-}
-
-.shapes-group .sh1 {
-    position: absolute;
-    bottom: 79px;
-    left: 0;
-    background: url(../images/background/3.png);
-    background-size: cover;
-    width: 400px;
-    height: 207px;
-    z-index: 0;
-    opacity: .4;
 }
 
 .contact-following {
@@ -2588,9 +2585,9 @@ color: #fff;
 .commen-banner {
     float: left;
     width: 100%;
-    background: url(../images/img1/9.jpg);
+    background: url(../images/background/blog-banner.png);
     position: relative;
-    padding: 250px 0 150px 22px;
+    padding: 170px 0 150px 0;
     background-size: cover;
     background-position: inherit;
 }
@@ -2604,7 +2601,8 @@ color: #fff;
     right: 0;
     width: 100%;
     height: 100%;
-    background: #ff000070;
+    background: #000;
+    opacity: .3;
 }
 
 .banner-inner h3 {
@@ -2645,7 +2643,7 @@ color: #fff;
 }
 
 .blg-lhs {
-    padding-right: 40px;
+    padding-right: 40px !IMPORTANT;
 }
 
 .blg-rhs {
@@ -2890,7 +2888,7 @@ color: #fff;
     font-weight: 400;
     border-radius: 15px;
     transition: all 0.5s ease;
-    background: #eee;
+    background: #eeeeee91;
 }
 
 .blg-in-comment i {
@@ -2901,7 +2899,7 @@ color: #fff;
 }
 
 .blg-in-comment .blg-in-submit {
-    background: #3c3ddc;
+    background: #8d99ff;
     border: 0;
     border-radius: 50px;
     color: #fff;
@@ -2918,7 +2916,7 @@ color: #fff;
 
 .blg-in-comment .blg-in-submit:hover {
     transition: all 0.6s ease;
-    background: #fd7e14;
+    background: #456da7;
     border: none;
 }
 
@@ -3059,7 +3057,7 @@ color: #fff;
 
 .blg-search .blg-sear-btn {
     float: left;
-    background: #3c3ddc;
+    background: #8d99ff;
     border-radius: 0 5px 5px 0;
     outline: none;
     width: 70px;
@@ -3218,11 +3216,9 @@ color: #fff;
     transition: all 0.4s ease;
     text-transform: capitalize;
     z-index: 2;
-    top: 30px;
-    left: 20px;
     background: none;
     float: left;
-    color: #fff;
+    color: #000;
 }
 
 .Categories i {
@@ -3286,9 +3282,9 @@ color: #fff;
 
 .tag-lhs .point {
     padding: 3px 15px;
-    background: #F5F5F5;
+    border: 1px solid #e5e5e5;
     margin: 0 8px;
-    color: #fff;
+    color: #646464;
     font-weight: 500;
     border-radius: 3px;
     text-decoration: none;
@@ -3470,7 +3466,6 @@ color: #fff;
     top: 79px;
     left: 0;
 }
-
 
 .faq .comm-heading{margin: 0 0 -51px 0;}
 

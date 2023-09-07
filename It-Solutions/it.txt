@@ -4,4 +4,5 @@ it solution pending work
 3-blog details img chages
 4-bannner group img changes
 5-all hover effects
+6-step by stpe
 

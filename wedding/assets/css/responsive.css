@@ -66,15 +66,7 @@
         margin-bottom: 50px;}
     .couple-img{padding-right: 0;padding-left: 0;}
     .lovelove-couple::before{display: none;}
-   
-
-    .about-us {
-        padding: 0 15px;
-    }
-    .about-content {
-        width: 100%;
-        padding: 0;
-    }
+  
 	.testimonial-img{margin: 0;}
 	.contact-us{padding: 50px 0 0 0;}
 	.case-img{margin: 15px 0;}
@@ -87,7 +79,7 @@
     }
 
    
-    1
+
     .post-left {
         margin-top: 35px;
     }
