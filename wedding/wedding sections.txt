@@ -1,10 +1,7 @@
 wedding template pedding itwems
-1-img chanes
-2- aninmations
-3-blog
-4-responsive
-5-unwanted css and img html
-6-all hover effects
+
+
+2-unwanted css and img html3
 
 
  wow bounce" data-wow-duration="0.2s

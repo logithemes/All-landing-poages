@@ -14,7 +14,6 @@
 12- FOOTER
 */
 
-
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap');
 
 * {
@@ -316,6 +315,7 @@ p{line-height: 27px;font-size: 15px;}
     position: relative;
     padding-bottom: 25px;
 }
+.wpo-event-item-img:hover span{/* color: #fff; */}
 .wpo-event-item-img img{
     height: 260px;
     object-fit: cover;
@@ -328,6 +328,23 @@ p{line-height: 27px;font-size: 15px;}
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
 }
+.wpo-event-item-img span::before{
+    position: absolute;
+    height: 2px;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: scalex(0);
+    background: #3839e947;
+    transform-origin: right;
+    height: 100%;
+    /* z-index: 0; */
+}
+.wpo-event-item-img:hover span::before{    transform: scalex(1);
+    transform-origin: left;}
+
 .wpo-event-item-text{
     text-align: center;
     padding-top: 25px;
@@ -840,7 +857,7 @@ side-panel-con ul {
     font-size: 14px;
     text-transform: initial;
     padding-top: 4px;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .side-bar-im i {
@@ -1454,7 +1471,7 @@ side-panel-con ul {
     text-align: left;
     padding-left: 50px;
 }
-.love-story-content h3{}
+
 .love-story-content i{
     color: #939580;
     font-weight: 500;
@@ -1464,8 +1481,6 @@ side-panel-con ul {
     position: relative;
 }
 .love-story-content i::before{position: absolute;content: "";left: 0;top: 12px;background: #93979c;width: 30px;height: 1px;}
-.love-story-content p{}
-.{}
 
 
 /*-------------------------------------------------*/
@@ -1494,10 +1509,6 @@ side-panel-con ul {
     transition: all 0.5s ease;
 }
 
-.team-member:hover {
-    transform: translateX(-10px);
-    transition: all 0.5s ease;
-}
 
 
 
@@ -1509,6 +1520,7 @@ side-panel-con ul {
     transition: all 0.5s ease;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .team-img:hover::after {
@@ -1698,15 +1710,21 @@ side-panel-con ul {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    float: left;
 }
 
+.post-right ul li:hover .small-img img{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
 .small-img {
     width: 100%;
-    height: 100%;
+    height: 100%;overflow: hidden;
 }
 
 .small-img img {
     border-radius: 2px;
+    transition: all 0.5s ease;
 }
 
 .post-content-1 a {
@@ -2452,7 +2470,8 @@ side-panel-con ul {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #ff000070;
+    background: #000;
+    opacity: .2;
 }
 
 .banner-inner h3 {
@@ -2493,7 +2512,7 @@ side-panel-con ul {
 }
 
 .blg-lhs {
-    padding-right: 40px;
+    padding-right: 40px !important;
 }
 
 .blg-rhs {
@@ -2654,6 +2673,7 @@ side-panel-con ul {
     justify-content: center;
     flex-direction: column;
     height: 100%;
+    align-items: flex-start;
 }
 
 .auther-in-txt h3 {
@@ -2671,12 +2691,13 @@ side-panel-con ul {
 
 .auther-in-txt a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 500;
     display: inline-block;
     background: none;
+    float: ;
 }
 
 .auther-in-txt i {
@@ -2738,7 +2759,7 @@ side-panel-con ul {
     font-weight: 400;
     border-radius: 15px;
     transition: all 0.5s ease;
-    background: #eee;
+    background: #eeeeeeb8;
 }
 
 .blg-in-comment i {
@@ -2749,12 +2770,10 @@ side-panel-con ul {
 }
 
 .blg-in-comment .blg-in-submit {
-    background: #3c3ddc;
+    background: #82cefd;
     border: 0;
-    border-radius: 50px;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
-    font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
     transition: all 0.5s ease;
@@ -2766,8 +2785,9 @@ side-panel-con ul {
 
 .blg-in-comment .blg-in-submit:hover {
     transition: all 0.6s ease;
-    background: #fd7e14;
+    background: #3c3ddc;
     border: none;
+    color: #fff;
 }
 
 .blg-in-comment ul li:nth-child(1),
@@ -2907,7 +2927,7 @@ side-panel-con ul {
 
 .blg-search .blg-sear-btn {
     float: left;
-    background: #3c3ddc;
+    background: #82cefd;
     border-radius: 0 5px 5px 0;
     outline: none;
     width: 70px;
@@ -2919,7 +2939,7 @@ side-panel-con ul {
     left: 0;
     margin-right: 0;
     line-height: 46px;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .popu-news {
@@ -3070,7 +3090,7 @@ side-panel-con ul {
     left: 20px;
     background: none;
     float: left;
-    color: #fff;
+    color: #000;
 }
 
 .Categories i {
@@ -3134,12 +3154,12 @@ side-panel-con ul {
 
 .tag-lhs .point {
     padding: 3px 15px;
-    background: #F5F5F5;
-    margin: 0 8px;
-    color: #fff;
+    color: #646464;
     font-weight: 500;
     border-radius: 3px;
     text-decoration: none;
+    border: 1px solid #e5e5e5;
+    margin-right: 7px;
 }
 
 .tag-lhs .point:hover {
@@ -3305,7 +3325,7 @@ side-panel-con ul {
     font-size: 16px;
     height: 40px;
     width: 40px;
-    background: #2196f3;
+    background: #82cefd;
     border-radius: 50%;
     line-height: 38px;
     cursor: pointer;

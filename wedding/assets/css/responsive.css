@@ -6,7 +6,7 @@
 /*-------------------------------------------------------*/
 /* When the browser is 1200px to all small screens,below css will be applied.
 /*-------------------------------------------------------*/
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
 
     .team-member:before {
         opacity: 0;
@@ -20,6 +20,7 @@
 
     .services-rhs li {
         padding: 15px;
+        padding-right: 0;
     }
 
     .ser-inner h2 {
@@ -32,6 +33,7 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
+    .blg-lhs{padding-right: 15px !important;}
     .footer{
     padding: 90px 0 70px 0;
 }
@@ -245,7 +247,7 @@
     }
 
     .blog-deatiles {
-        padding: 90px 0;
+        padding: 90px 0 70px 0;
     }
 
     .img-aera {
@@ -317,7 +319,10 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width:767px) {
-    .comm-heading h2{font-size: 33px;line-height: 40px;}
+    .tag-lhs .point{    margin: 5px 10px 9px 10px;
+        display: inline-block;}
+    .comm-heading img{margin-left: 30px;}
+    .comm-heading h2{font-size: 30px;line-height: 39px;}
     .contact-map{padding: 0;}
     .plac-gal-imag{width: 100%;}
     .fun-fact-inner ul{
@@ -343,7 +348,9 @@
     right: auto;
     margin-left: 162px;
 }
-    .ban-inn{}
+    .ban-inn{
+    padding: 0 10px;
+}
 	.tab-showcase{display: block;}
     .commen-banner {
         padding: 164px 0 92px 22px;
@@ -393,6 +400,7 @@
 /* When the browser is 576px to all small screens,below css will be applied.
 /*-------------------------------------------------------*/
 @media screen and (max-width:576px) {
+   
     .services .container{
     padding: 0 23px;
 }
@@ -466,6 +474,14 @@
 }
 
 @media screen and (max-width:480px) {
+    .blg-in-comment li{width: 100% !important;padding: 0 !important;margin-bottom: 14px;}
+    .auther-in-txt{
+    width: 100%;
+    padding: 0 0 0 15px;
+}
+ 
+
+    .banner .ban-lhs::before, .banner .ban-lhs::after{display: none;}
     .fun-fact-inner li {
         width: 100%;
     }
