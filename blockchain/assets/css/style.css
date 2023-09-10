@@ -15,7 +15,6 @@
 */
 
 
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 
@@ -3146,6 +3145,27 @@ side-panel-con ul {
 
 .investing-img{position: relative;display: flex;align-items: center;justify-content: center;}
 .investing-img::before{position: absolute;content: "";background: url(../images/img1/3.png);background-size: cover;width: 550px;height: 550px;z-index: -1;animation: rotate 20s infinite linear;left: 53%;top: 55%;}
+.number-count{
+    float: left;
+    width: 100%;
+}
+.number-count ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number-count li{
+    padding-right: 20px;
+}
+.number-count i{
+    font-size: 50px;
+    color: #37c2f5;
+    font-weight: 600;
+}
+.number-count  h3{
+    font-size: 20px;
+    line-height: 30px;
+}
 
 /*-------------------------------------------------*/
 /*  oru-community
