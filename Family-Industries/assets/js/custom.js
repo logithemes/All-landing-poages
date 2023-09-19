@@ -9,7 +9,8 @@ $(document).ready(function () {
         $(".menu").removeClass("menuact");
     })
 
-  
+
+
     //BANNER ANIMATION
     $(".banner .ban-lhs").addClass("ani1");
   
