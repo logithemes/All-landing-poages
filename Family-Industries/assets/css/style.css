@@ -99,7 +99,7 @@ p {
   padding: 85px 0 50px 0;
   float: left;
   position: relative;
-  overflow: hidden;
+  overflow: hidden !important;
   height: 100%;
   background: #000;
 }
@@ -136,6 +136,7 @@ p {
   transform: translateX(50%);
   transition: all 0.5s ease;
   opacity: 0;
+  margin-top: -80px;
 }
 
 .banner .ban-lhs.ani1 {
@@ -143,7 +144,6 @@ p {
   transition: all 0.5s ease;
   opacity: 1;
   transition-delay: 0.5s;
-  margin-top: -80px;
 }
 
 .ban-lhs h1 {
@@ -253,8 +253,8 @@ position: absolute;
 
 .client-logo-wrap {
   position: relative;
-  overflow: hidden;
-  height: 150px;float: left;width: 100%;
+  overflow: hidden !important;
+  width: 100%;
 }
 
 .client-logo {
@@ -267,8 +267,11 @@ position: absolute;
 }
 
 .client-logo-left {
-  animation: logomoveleft 10s linear infinite;
+  /* animation: logomoveleft 10s linear infinite; */
+  animation-delay: 1s;
 }
+
+
 
 
 .client-logo li {
@@ -290,8 +293,39 @@ position: absolute;
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(-30%, 0);
+    transform: translate(-1500px, 0);
   }
+}
+
+
+@keyframes logomoveright {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(2000px, 0);
+  }
+}
+
+.client-logo-right {
+  /* animation: logomoveright 10s linear infinite; */
+}
+
+/*-------------------------------------------------*/
+/* min case images
+/*-------------------------------------------------*/
+.client-logo-wrap1{
+    height: 379px;
+}
+.client-logo-wrap1 .client-logo img{
+    width: 100%;
+    height: 379px;
+    object-fit: cover;
+}
+.client-logo-wrap1 .client-logo li{
+    width: 366px;
+    height: 355px;
+    object-fit: cover;
 }
 
 /*-------------------------------------------------*/
@@ -302,7 +336,9 @@ position: absolute;
     float: left;
     width: 100%;
     padding-top: 140px;
-    padding-bottom: 100px;position: relative;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden !important;
 }
 .shape1{
   position: absolute;
@@ -474,7 +510,7 @@ position: absolute;
   transition: all 0.5s ease;
   z-index: 1000;
 }
-
+.side-bar .side-panel-con span{color: #000;}
 .side-bar-im {
   width: 100%;
   margin-bottom: 25px;
@@ -497,6 +533,7 @@ position: absolute;
   display: inline-block;
   font-weight: 600;
   position: relative;
+  color: #000;
 }
 
 .side-panel-con a {
@@ -514,6 +551,7 @@ position: absolute;
   float: left;
   padding-bottom: 30px;
   margin: 0;
+  color: #000;
 }
 
 .side-bar-blg-post {
@@ -654,6 +692,7 @@ side-panel-con ul {
   position: absolute;
   top: 0px;
   left: 0px;
+  width: 100%;
   right: 0px;
   padding: 18px 0px;
   z-index: 99;
@@ -712,7 +751,7 @@ side-panel-con ul {
 }
 
 .menu a:hover {
-  color: #8d99ff !important;
+  color: #3c3ddc !important;
   text-decoration: none;
   font-weight: 600;
 }
@@ -725,7 +764,7 @@ side-panel-con ul {
   left: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
-  background: #8d99ff;
+  background: #3c3ddc;
   transform: scalex(0);
   transform-origin: right;
 }
@@ -747,7 +786,7 @@ side-panel-con ul {
   display: flex;
   justify-content: space-between;
 }
-
+.menu1 a{color: #000;}
 .side-bar-right i {
   font-size: 12px;
   color: #fff;
@@ -823,10 +862,10 @@ side-panel-con ul {
   transition: all 0.5s ease;
   background: #a9ff5c;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   z-index: 6;
   border-radius: 20px;
-  box-shadow: 2px 2px 0px 0 #fff;
+  overflow: hidden;
 }
 .comm-btn a::before {
   position: absolute;
@@ -878,7 +917,7 @@ side-panel-con ul {
   position: relative;
   padding: 70px 0 170px 0;
   text-align: center;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 .our-team .container{
     max-width: 100%;
@@ -983,13 +1022,14 @@ side-panel-con ul {
 .generator{
     float: left;
     width: 100%;
-    overflow: hidden;
+    overflow: hidden !important;
     padding-bottom: 62px;
 }
 .generator-slider{
     position: relative;
     width: 100%;
     display: block;
+    /* overflow: hidden; */
 }
 .generator .comm-btn{margin-top: 75px;}
 .generator-slider ul{margin: 0;padding: 0;}
@@ -1028,6 +1068,7 @@ side-panel-con ul {
     width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
+    overflow: hidden !important;
 }
 .bridge-text{
     padding-right: 20px;
@@ -1053,7 +1094,7 @@ side-panel-con ul {
 /* customization-experiences-section
 /*-------------------------------------------------*/
 
-.customization{float: left;width: 100%;padding-bottom: 80px;position: relative;}
+.customization{float: left;width: 100%;padding-bottom: 80px;position: relative;overflow: hidden;}
 .matter-pills{
     text-align: center;
     width: 100%;
@@ -1062,7 +1103,7 @@ side-panel-con ul {
     margin-bottom: 10px;
 }
 .pill img{
-    max-width: 250px;
+    max-width: 220px;
 }
 .customization .customization-text{
     text-align: left;
@@ -1074,6 +1115,7 @@ side-panel-con ul {
 .case-studies{
     float: left;
     width: 100%;
+    overflow: hidden;
 }
 .case-studies-main{
     position: relative;
@@ -1085,7 +1127,7 @@ side-panel-con ul {
 .case-studies-main li{
     padding: 0 15px;transition: all 0.5s ease;
 }
-/*.case-studies-main li:hover .case-studies-img img{width: 100%;transition: all 0.5s ease;}*/
+
 
 .case-studies-main li:hover{width: 100%;transition: all 0.5s ease;}
 .case-studies-main li a{}
@@ -1115,7 +1157,7 @@ side-panel-con ul {
 /*-------------------------------------------------*/
 /* interactive text ctn
 /*-------------------------------------------------*/
-.interactive-ctn{float: left;width: 100%;padding-top: 30px;}
+.interactive-ctn{float: left;width: 100%;padding-top: 30px;overflow: hidden;}
 .text{
     font-size: 68px;
     text-transform: uppercase;
@@ -1484,7 +1526,7 @@ side-panel-con ul {
 .contact-us {
   position: relative;
   padding: 0 0 0 0;
-
+  overflow: hidden;
   overflow: hidden;
 }
 
@@ -1718,6 +1760,7 @@ side-panel-con ul {
   width: 140px;
   object-fit: cover;
   float: left;
+  filter: invert(1);
 }
 
 .log-det p {
@@ -1749,7 +1792,7 @@ side-panel-con ul {
   float: left;
   width: 20%;
   outline: none;
-  background: #cb5cff;
+  background: #a9ff5c;
   transition: all 0.4s ease;
   height: 50px;
   border-radius: 0 30px 30px 0;
@@ -1758,13 +1801,13 @@ side-panel-con ul {
 }
 
 .log-det .sb-btn:hover {
-  background: #fd7e14;
+  background: #3c3ddc;
   transition: all 0.4s ease;
 }
 
 .log-det i {
   font-size: 16px;
-  color: #fff;
+  color: #000;
   margin-top: 4px;
 }
 
@@ -1794,7 +1837,7 @@ side-panel-con ul {
   font-weight: 500;
   padding-left: 20px;
   transition: all 0.4s ease;
-  color: #cb5cff;
+  color: #a9ff5c;
   padding-left: 18px;
   text-decoration: none;
 }
@@ -1811,7 +1854,7 @@ side-panel-con ul {
   left: 5px;
   transition: all 0.4s ease;
   width: 9px;
-  background: #cb5cff;
+  background: #a9ff5c;
   height: 1px;
 }
 
@@ -1981,7 +2024,7 @@ side-panel-con ul {
 .commen-banner {
   float: left;
   width: 100%;
-  background: url(../images/img1/9.jpg);
+  background: url(../images/blog/banner.jpg);
   position: relative;
   padding: 250px 0 150px 22px;
   background-size: cover;
@@ -2051,7 +2094,9 @@ side-panel-con ul {
   padding: 0;
   position: relative;
 }
-
+.blog-det-inn .blg-det-icons i, .blog-det-inn .blg-det-icons b{
+    color: #000;
+}
 .blog-meta i {
   color: #777;
   font-size: 13px;
@@ -2069,6 +2114,7 @@ side-panel-con ul {
   letter-spacing: -1px;
   text-transform: inherit;
   line-height: 44px;
+  color: #000;
 }
 
 .blog-det-inn h6 {
@@ -2116,6 +2162,7 @@ side-panel-con ul {
   text-transform: capitalize;
   margin: 0;
   padding: 0 0 40px 0;
+  color: #000;
 }
 
 .blg-inn-content .arrows {
@@ -2169,7 +2216,7 @@ side-panel-con ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #9996;
   padding-bottom: 40px;
 }
 
@@ -2208,12 +2255,14 @@ side-panel-con ul {
   letter-spacing: -1px;
   text-transform: capitalize;
   font-size: 22px;
+  color: #000;
 }
 
 .auther-in-txt p {
   font-size: 14px;
   line-height: 26px;
   margin: 10px 0;
+  color: #000;
 }
 
 .auther-in-txt a {
@@ -2230,7 +2279,7 @@ side-panel-con ul {
 .auther-in-txt i {
   position: relative;
   font-size: 15px;
-  color: #999;
+  color: #000;
   top: 0;
   left: 0;
   margin: 0 12px;
@@ -2263,6 +2312,7 @@ side-panel-con ul {
   padding-bottom: 28px;
   font-size: 22px;
   position: relative;
+  color: #000;
 }
 
 .blg-in-comment ul {
@@ -2286,7 +2336,9 @@ side-panel-con ul {
   font-weight: 400;
   border-radius: 15px;
   transition: all 0.5s ease;
-  background: #eeeeeeb8;
+  background: #f4f6ffe0;
+  border: 1px solid #999;
+  color: #000;
 }
 
 .blg-in-comment i {
@@ -2297,7 +2349,7 @@ side-panel-con ul {
 }
 
 .blg-in-comment .blg-in-submit {
-  background: #82cefd;
+  background: #a9ff5c;
   border: 0;
   color: #000;
   text-transform: uppercase;
@@ -2365,6 +2417,7 @@ side-panel-con ul {
   letter-spacing: -1px;
   font-size: 25px;
   font-weight: 500;
+  color: #000;
 }
 
 .au-comm-box {
@@ -2398,22 +2451,24 @@ side-panel-con ul {
   line-height: 28px;
   display: inline-block;
   font-weight: 500;
+  color: #000;
 }
 
 .au-comm-text span {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 500;
-  color: #666;
   padding: 3px 0;
   display: inline-block;
   width: 100%;
+  color: #000;
 }
 
 .au-comm-text p {
   margin: 0;
   font-size: 14px;
   float: left;
+  color: #000;
 }
 
 .au-comm-text i {
@@ -2423,8 +2478,8 @@ side-panel-con ul {
   display: inline-block;
   padding: 6px;
   border-radius: 50px;
-  color: #645555;
   font-size: 13px;
+  color: #000;
 }
 
 .au-comm-text b {
@@ -2432,6 +2487,7 @@ side-panel-con ul {
   margin-left: 8px;
   display: inline-block;
   font-weight: 400;
+  color: #000;
 }
 
 .blg-search {
@@ -2454,7 +2510,7 @@ side-panel-con ul {
 
 .blg-search .blg-sear-btn {
   float: left;
-  background: #82cefd;
+  background: #a9ff5c;
   border-radius: 0 5px 5px 0;
   outline: none;
   width: 70px;
@@ -2466,7 +2522,7 @@ side-panel-con ul {
   left: 0;
   margin-right: 0;
   line-height: 46px;
-  /* color: #fff; */
+  color: #000;
 }
 
 .popu-news {
@@ -2479,7 +2535,9 @@ side-panel-con ul {
 .blg-headline {
   padding: 0;
 }
-
+.blg-headline h2{
+    color: #000;
+}
 .m-a-top {
   margin-top: 10px;
 }
@@ -2530,7 +2588,7 @@ side-panel-con ul {
 }
 
 .blg-post-content a {
-  color: #8a8c93;
+  color: #000;
   font-size: 12px;
   text-decoration: none;
   float: left;
@@ -2545,16 +2603,18 @@ side-panel-con ul {
   line-height: 22px;
   transition: all 0.5s ease;
   font-weight: 500;
+  color: #000;
 }
 
 .blg-post-content span {
   margin-left: 0;
   font-size: 12px;
-  color: #8a8c93;
+  color: #000;
 }
 
 .blg-post-content i {
   margin: 0 12px 0 0;
+  color: #000;
 }
 
 .Categories,
@@ -2625,11 +2685,12 @@ side-panel-con ul {
   font-size: 14px;
   font-style: normal;
   float: right;
-  background: #fff;
+  border: 1px solid #999;
   width: 22px;
   height: 22px;
   text-align: center;
   border-radius: 50%;
+  color: #000;
 }
 
 .m-b {
@@ -2677,8 +2738,11 @@ side-panel-con ul {
 .tag-lhs span,
 .tag-share span {
   font-weight: 500;
+  color: #000;
 }
-
+.tag-share i{
+    color: #647cb4;
+}
 .tag-lhs .point {
   padding: 3px 15px;
   color: #646464;
@@ -2703,7 +2767,7 @@ side-panel-con ul {
 
 .tag-share a {
   font-size: 19px;
-  color: #afb2bb;
+  color: #000;
   margin: 0 8px;
   background: none;
 }
@@ -2934,7 +2998,6 @@ side-panel-con ul {
 #exitButton:hover {
   opacity: 0.7;
 }
-
 
 
 

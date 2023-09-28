@@ -25,6 +25,35 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
+    .generator-img{
+    width: 100%;
+}
+    .content{
+    width: 100%;
+}
+    .media-video{}
+    .bridge-text h2{}
+    .case-studies-main ul{}
+    .case-studies-main li{}
+    .case-studies-img img{}
+    .text{}
+    .why-choose-inner{padding: 0;}
+    .why-choose-inner h2{
+    font-size: 43px;
+    line-height: 53px;
+    position: relative;
+    z-index: 1;
+}
+    .avatars{display: none;}
+    .why-choose{
+    padding-top: 0;
+}
+    .why-choose-inner p{
+    font-size: 16px;
+    line-height: 25px;
+}
+    .video-banner{width: 100%;transform: none;}
+    .banner .ban-lhs{margin-top: 0;margin-bottom: 59px;}
     .blg-lhs{padding-right: 15px !important;}
     .footer{
     padding: 90px 0 70px 0;
@@ -67,7 +96,7 @@
 
     .our-team {
         padding-bottom: 30px;
-        padding-top: 100px;
+        padding-top: 25px;
     }
 
     .followers {
@@ -239,6 +268,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        margin-bottom: 62px;
     }
 
     .ban-inn {
@@ -295,8 +325,8 @@
     padding: 40px 15px 80px 15px;
 }
     .ban-lhs h1{
-    font-size: 40px;
-    line-height: 41px;
+    font-size: 50px;
+    line-height: 52px;
 }
     .ban-lhs p{
     font-size: 18px;

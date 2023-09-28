@@ -10,7 +10,6 @@ $(document).ready(function () {
     })
 
 
-
     //BANNER ANIMATION
     $(".banner .ban-lhs").addClass("ani1");
   
@@ -59,6 +58,16 @@ $(document).ready(function () {
 
 $(window).on("scroll", function(){
     var _topval = $(window).scrollTop();
+
+    var _topmi = "-" + _topval/2+"px";
+    var _toppl = _topval/20 + "px";
+    $(".client-logo-left").css({'transform' : 'translateX(' + _toppl +')'});
+    $(".client-logo-wrap1 .client-logo").css({'transform' : 'translateX(' + _topmi +')'});
+
+    
+   // $(".ban-left").css({'transform' : 'translateX(' + _topMi +' )'});
+
+
 
     if(_topval >= 150){
         $(".nav").addClass("act");
