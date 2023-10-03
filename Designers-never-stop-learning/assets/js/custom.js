@@ -63,13 +63,22 @@ $(document).ready(function () {
 
 //ON WINDOW SCROOL FUNCTION
 
-$(window).on("scroll", function(){
+$(window).on("scroll", function(){  
     var _topval = $(window).scrollTop();
 
-    var _topmi = "-" + _topval/2+"px";
-    var _toppl = _topval/20 + "px";
-    $(".client-logo-left").css({'transform' : 'translateX(' + _toppl +')'});
-    $(".client-logo-wrap1 .client-logo").css({'transform' : 'translateX(' + _topmi +')'});
+
+    //window scrool top active menu
+    $(".anicom").each(function(){
+        var _commen = $(this).offset().top - 100;
+        if(_topval >= _commen){
+            var _get = $(this).attr("id");
+            $(".menu ul li a").removeClass("act1");
+            $("." + _get + "_nav").addClass("act1")
+        }
+    });
+
+         
+
 
     
    // $(".ban-left").css({'transform' : 'translateX(' + _topMi +' )'});

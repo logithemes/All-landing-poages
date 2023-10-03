@@ -7,352 +7,385 @@
 /*-------------------------------------------------------*/
 @media screen and (max-width: 1200px) {
    
+}
+
+/*-------------------------------------------------------*/
+/* When the browser is 992 to all small screens,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 992px) {
+  .group-img .group-2{}
+  .deep-dives-blox{margin-top: 50px;}
+  .padding-left-all{padding: 0;}
+  .nav-inner{height: auto;align-items: center;align-items: center;justify-content: center;}
+ 
+  .cpy-right h3 {
+    text-align: center;
   }
-  
-  /*-------------------------------------------------------*/
-  /* When the browser is 992 to all small screens,below css will be applied.
-  /*-------------------------------------------------------*/
-  
-  @media screen and (max-width: 992px) {
-   
-    .cpy-right h3 {
-      text-align: center;
-    }
-   
-    .banner .ban-lhs {
-      margin-top: 0;
-      margin-bottom: 59px;
-    }
-    .blg-lhs {
-      padding-right: 15px !important;
-    }
-    .footer {
-      padding: 90px 0 70px 0;
-    }
-    .con-det::before {
-      border: 19px solid #cde0ef;
-    }
-    .contact-us::before {
-      width: 300px;
-      height: 400px;
-      opacity: 0.1;
-    }
-    .testimonial {
-      padding-bottom: 0;
-    }
-  
-    .testimonial-img {
-      margin: 0;
-    }
-    .contact-us {
-      padding: 50px 0 0 0;
-    }
-  
-    
-    .followers {
-      margin-bottom: 30px;
-    }
-  
-    .ser-inner {
-      padding: 0;
-    }
-  
-    .auther-in-im {
-      width: auto;
-    }
-  
-    /*-------------------------*/
-    .menu a:hover {
-      color: #fff;
-    }
-  
-    .top-cl-fun {
-      padding: 0 25px;
-    }
-  
-    .side-bar.act {
-      width: 100%;
-    }
-  
-    .nav .row {
-      align-items: center;
-    }
-  
-    .nav {
-      background: #fff;
-      padding: 35px 0;
-    }
-  
-    .side-bar-right i {
-      width: 30px;
-      height: 30px;
-      font-size: 12px;
-    }
-  
-    .logo img {
-      max-width: 128px;
-    }
-  
-    .nav-inner .menu {
-      position: fixed;
-      left: -500px;
-      top: 0;
-      overflow-y: auto;
-      height: 100vh;
-      width: 300px;
-      background: #16243d;
-      padding: 31px 20px 20px 20px;
-      z-index: 99;
-      transition: all 0.5s ease;
-    }
-  
-    .menu ul li:first-child {
-      display: block;
-    }
-  
-    .menu li {
-      width: 100%;
-      padding-bottom: 13px;
-    }
-  
-    .menu a {
-      color: #fff !important;
-      width: 100%;
-      border-bottom: 1px solid #908484;
-      padding-bottom: 17px;
-    }
-  
-    .menu img {
-      width: 120px;
-      filter: invert(1);
-      margin-bottom: 24px;
-    }
-  
-    .menu ul li:last-child {
-      border: 0;
-    }
-  
-    .nav-inner .side-bar-right {
-      position: absolute;
-      right: 15px;
-    }
-  
-    .logo {
-      position: absolute;
-      transform: scale(0.8);
-    }
-  
-    .menu-bar {
-      display: block;
-      position: absolute;
-      left: 15px;
-    }
-  
-    .menu ul {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .menu span {
-      position: absolute;
-      right: 20px;
-      top: 0;
-      background: red;
-      color: #fff;
-      width: 30px;
-      height: 30px;
-      border-radius: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 17px;
-      cursor: pointer;
-    }
-  
-    .menu.menuact {
-      left: 0;
-    }
-    /*-------------------------*/
-  
-   
-  
-    .contact-map {
-      margin-top: 50px;
-    }
-  
-    .cpy-right-top .cpy {
-      flex-direction: column;
-      display: flex;
-      align-items: center;
-      margin: 10px 0;
-    }
-  
-    .foo-deati {
-      margin-top: 10px;
-    }
-  
-   
-  
-    .ban-inn {
-      display: block;
-      text-align: center;
-    }
-  
-    .banner .ban-lhs .comm-btn {
-      justify-content: center;
-      margin-top: 30px;
-    }
-  
-    .ban-lhs h1 {
-      padding: 0;
-      font-size: 60px;
-      line-height: 60px;
-    }
-  
-    .ban-lhs p {
-      border-left: 0;
-      padding-right: 0;
-      padding-bottom: 25px;
-      padding-left: 0;
-    }
-  
-    .banner {
-      padding-bottom: 70px;
-      padding-top: 170px;
-    }
-  
-  
+ 
+  .banner .ban-lhs {
+    margin-top: 0;
+    margin-bottom: 59px;
   }
-  
-  /*-------------------------------------------------------*/
-  /* When the browser is 768px to all small screens,below css will be applied.
-  /*-------------------------------------------------------*/
-  
-  @media screen and (max-width: 767px) {
-    .comm-btn a {
-      padding: 23px 45px;
-    }
-   
-    .content h3,
-    .content b {
-      font-size: 30px;
-    }
-   
-    .comm-heading img {
-      margin-left: 30px;
-    }
-    .comm-heading h2 {
-      font-size: 30px;
-      line-height: 39px;
-    }
-    .contact-map {
-      padding: 0;
-    }
-  
-  
-    .banner .ban-lhs {
-      padding: 0 0 0 0;
-    }
-    .ban-lhs h1 {
-      font-size: 50px;
-      line-height: 52px;
-    }
-    .ban-lhs p {
-      font-size: 18px;
-      line-height: 30px;
-      font-weight: 400;
-      padding-top: 20px;
-    }
-  
-    .ban-inn {
-      padding: 0 10px;
-    }
-  
-  
-    .ban-lhs h1::before {
-      display: none;
-    }
-  
-    .footer::before,
-    .footer::after,
-    .testimonial::before,
-    .testimonial::after {
-      display: none;
-    }
-  
-   
-    .foo-deati a {
-      padding-left: 0;
-    }
-  
-    .foo-deati {
-      margin-top: 30px;
-    }
-  
-    .post-content {
-      padding: 25px;
-    }
+  .blg-lhs {
+    padding-right: 15px !important;
   }
-  
-  /*-------------------------------------------------------*/
-  /* When the browser is 576px to all small screens,below css will be applied.
-  /*-------------------------------------------------------*/
-  @media screen and (max-width: 576px) {
-  
-  
-    .contact-following {
-      display: none;
-    }
-  
-    .ban-lhs h1::before {
-      display: none;
-    }
-  
-    .testimonial:before {
-      display: none;
-    }
-  
-    .comm-heading {
-      width: 100%;
-      text-align: center;
-    }
-  
-  
-  
-    .testimonial {
-      text-align: center;
-      padding-top: 0;
-    }
-  
-    .footer {
-      padding-top: 70px;
-      padding-bottom: 70px;
-    }
-  
-  
+  .footer {
+    padding: 90px 0 70px 0;
   }
-  
-  @media screen and (max-width: 480px) {
-   
-    .banner .ban-lhs::before,
-    .banner .ban-lhs::after {
-      display: none;
-    }
-   
-  
-    .ban-lhs h1 {
-      font-size: 50px;
-      line-height: 52px;
-    }
-  
-    .banner .ban-lhs .comm-btn {
-      flex-direction: column;
-    }
-  
-    .comm-btn .bg-none {
-      margin-top: 25px;
-    }
-  
-  
+  .con-det::before {
+    border: 19px solid #cde0ef;
   }
+  .contact-us::before {
+    width: 300px;
+    height: 400px;
+    opacity: 0.1;
+  }
+  .testimonial {
+    padding-bottom: 0;
+  }
+
+  .testimonial-img {
+    margin: 0;
+  }
+  .contact-us {
+    padding: 50px 0 0 0;
+  }
+
   
+  .followers {
+    margin-bottom: 30px;
+  }
+
+  .ser-inner {
+    padding: 0;
+  }
+
+  .auther-in-im {
+    width: auto;
+  }
+
+  /*-------------------------*/
+  .menu a:hover {
+    color: #fff;
+  }
+
+  .top-cl-fun {
+    padding: 0 25px;
+  }
+
+  .side-bar.act {
+    width: 100%;
+  }
+
+  .nav .row {
+    align-items: center;
+  }
+
+  .nav {
+    background: #fff;
+    padding: 35px 0;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    position: absolute;
+  }
+
+  .side-bar-right i {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .logo img {
+    max-width: 128px;
+  }
+
+  .nav-inner .menu {
+    position: fixed;
+    left: -500px;
+    top: 0;
+    overflow-y: auto;
+    height: 100vh;
+    width: 300px;
+    background: #16243d;
+    padding: 31px 20px 20px 20px;
+    z-index: 99;
+    transition: all 0.5s ease;
+  }
+
+  .menu ul li:first-child {
+    display: block;
+  }
+
+  .menu li {
+    width: 100%;
+    padding-bottom: 13px;
+  }
+
+  .menu a {
+    color: #fff !important;
+    width: 100%;
+    border-bottom: 1px solid #908484;
+    padding-bottom: 17px;
+  }
+
+  .menu img {
+    width: 120px;
+    filter: invert(1);
+    margin-bottom: 24px;
+  }
+
+  .menu ul li:last-child {
+    border: 0;
+  }
+
+  .nav-inner .side-bar-right {
+    position: absolute;
+    right: 15px;
+  }
+
+  .logo {
+    position: absolute;
+    transform: scale(0.8);
+  }
+
+  .menu-bar {
+    display: block;
+    position: absolute;
+    left: 15px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu span {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background: red;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  .menu.menuact {
+    left: 0;
+  }
+  /*-------------------------*/
+
+ 
+
+  .contact-map {
+    margin-top: 50px;
+  }
+
+  .cpy-right-top .cpy {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .foo-deati {
+    margin-top: 10px;
+  }
+
+ 
+
+  .ban-inn {
+    display: block;
+    text-align: center;
+  }
+
+  .banner .ban-lhs .comm-btn {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .ban-lhs h1 {
+    padding: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .ban-lhs p {
+    border-left: 0;
+    padding-right: 0;
+    padding-bottom: 25px;
+    padding-left: 0;
+  }
+
+  .banner {
+    padding-bottom: 70px;
+    padding-top: 170px;
+  }
+
+
+}
+
+/*-------------------------------------------------------*/
+/* When the browser is 768px to all small screens,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+  .banner{}
+  .comm-btn a {
+    padding: 23px 45px;
+  }
+ 
+  .content h3,
+  .content b {
+    font-size: 30px;
+  }
+ 
+  .comm-heading img {
+    margin-left: 30px;
+  }
+  .comm-heading h2 {
+    font-size: 35px;
+    line-height: 43px;
+  }
+  .contact-map {
+    padding: 0;
+  }
+
+
+  .banner .ban-lhs {
+    padding: 0 0 0 0;
+  }
+  .ban-lhs h1 {
+    font-size: 50px;
+    line-height: 52px;
+  }
+  .ban-lhs p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    padding-top: 20px;
+  }
+
+  .ban-inn {
+    padding: 0 10px;
+  }
+
+
+  .ban-lhs h1::before {
+    display: none;
+  }
+
+  .footer::before,
+  .footer::after,
+  .testimonial::before,
+  .testimonial::after {
+    display: none;
+  }
+
+ 
+  .foo-deati a {
+    padding-left: 0;
+  }
+
+  .foo-deati {
+    margin-top: 30px;
+  }
+
+  .post-content {
+    padding: 25px;
+  }
+}
+
+/*-------------------------------------------------------*/
+/* When the browser is 576px to all small screens,below css will be applied.
+/*-------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+  .deep-dives-blox{padding: 30px;}
+  
+  .oru-mission{padding: 0;}
+  .video-four{
+    margin-top: 0;
+}
+  .video-four ul li:last-child{}
+  .video-four ul{
+    flex-direction: column;
+}
+  .video-banner{}
+  .banner{
+    padding-top: 120px;
+}
+
+
+  .contact-following {
+    display: none;
+  }
+
+  .ban-lhs h1::before {
+    display: none;
+  }
+
+  .testimonial:before {
+    display: none;
+  }
+
+  .comm-heading {
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+  .testimonial {
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .footer {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+
+}
+
+@media screen and (max-width: 480px) {
+  .get-submit{text-align: center;}
+  .get-submit input{
+    width: 52%;
+}
+  .get-submit button{
+    width: 49%;
+}
+  .team-mates-all{padding: 20px 0 0 0;}
+  .our-courses-box{padding: 30px;}
+  .price{padding-right: 0;padding-top: 25px;}
+ 
+  .banner .ban-lhs::before,
+  .banner .ban-lhs::after {
+    display: none;
+  }
+ 
+
+  .ban-lhs h1 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .banner .ban-lhs .comm-btn {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .comm-btn .bg-none {
+    margin-top: 25px;
+  }
+
+
+}
