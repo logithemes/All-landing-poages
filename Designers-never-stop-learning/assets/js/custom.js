@@ -14,6 +14,13 @@ $(document).ready(function () {
     $(".banner .ban-lhs").addClass("ani1");
   
 
+     //FAQ CLICK FUNCTION
+     $(".faq-rhs ul li h3").on("click", function () {
+        $(".faq-rhs p").slideUp(500);
+        $(this).siblings(".faq-rhs p").slideDown(500);
+        $(".faq-rhs ul li h3").removeClass("act");
+        $(this).addClass("act");
+    })
 
     //TOP SEARCH
     $(".search-top").on("click", function(){
