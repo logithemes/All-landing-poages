@@ -270,6 +270,8 @@ p {
 .our-courses-box:hover .price span{
     transition: all 0.5s ease;
     transform: rotate(0deg);
+    background: #fff;
+    color: #000;
 }
 .our-courses-box:hover{transition: all 0.5s ease;    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);}
 .our-courses-box:hover .group-img .group-1{
@@ -470,7 +472,7 @@ p {
   width: 100%;
   margin-bottom: 25px;
 }
-
+.side-bar-im p{color: #000;}
 .side-bar-im img {
   width: 150px;
   height: auto;
@@ -497,7 +499,24 @@ p {
 }
 
 
-
+.side-bar .footer-follow{
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 20px 0 0 0;
+}
+.side-bar .footer-follow h4{
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.side-bar .footer-follow ul{
+    display: flex;
+}
+.side-bar .footer-follow li{}
+.side-bar .footer-follow li i{
+    background: #00bcd4;
+}
 
 .side-panel-con i {
   color: rgb(240 64 55 / 86%);
@@ -656,7 +675,7 @@ p {
     border-radius: 5px;
 }
 .menu a:hover {
-  color: #3c3ddc !important;
+  color: #00bcd4!important;
   text-decoration: none;
   font-weight: 600;
 }
@@ -669,7 +688,7 @@ p {
   left: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
-  background: #3c3ddc;
+  background: #00bcd4;
   transform: scalex(0);
   transform-origin: right;
 }
@@ -786,7 +805,7 @@ p {
   /* right: 0; */
   transition: transform 0.3s ease-in-out;
   transform: scalex(0.1);
-  background: #3c3ddc;
+  background: #82cefd;
   transform-origin: left;
   height: 100%;
   z-index: 0;
@@ -1536,7 +1555,7 @@ p {
   float: left;
   width: 20%;
   outline: none;
-  background: #a9ff5c;
+  background: #00bcd4;
   transition: all 0.4s ease;
   height: 50px;
   border-radius: 0 30px 30px 0;
@@ -1551,7 +1570,7 @@ p {
 
 .log-det i {
   font-size: 16px;
-  color: #000;
+  /* color: #000; */
   margin-top: 4px;
 }
 
@@ -1581,7 +1600,7 @@ p {
   font-weight: 500;
   padding-left: 20px;
   transition: all 0.4s ease;
-  color: #a9ff5c;
+  color: #00bcd4;
   padding-left: 18px;
   text-decoration: none;
 }
@@ -1598,7 +1617,7 @@ p {
   left: 5px;
   transition: all 0.4s ease;
   width: 9px;
-  background: #a9ff5c;
+  background: #00bcd4;
   height: 1px;
 }
 
@@ -1760,3 +1779,40 @@ p {
 .our-courses .mb{
     margin-bottom: 30px;
 }
+.framer-text{
+    display: inline-block;
+    position: relative;
+    left: -36px;
+}
+/*-------------------------------------------------*/
+/*our courses details videos
+/*-------------------------------------------------*/
+
+
+.video-img{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+.video-img img{
+    margin-bottom: 30px;
+}
+.video-img a{
+    position: absolute;
+}
+.video-img i{background: red;width: 50px;height: 50px;display: flex;align-items: center;justify-content: center;border-radius: 50px;}
+
+.courses-details .price{padding-top: 30px;}
+.courses-details .get-submit h5{margin-top: 20px;}
+.courses-details {
+    padding-bottom: 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.courses-details::before{position: absolute;content: "";background: linear-gradient(180deg,#031e66 0%,#0c4a45 100%);width: 550px;height: 550px;bottom: -100px;border-radius: 50%;z-index: 0;}

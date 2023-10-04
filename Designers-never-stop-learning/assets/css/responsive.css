@@ -14,6 +14,13 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
+  .courses-details{
+    text-align: center;
+}
+.courses-details .price{
+    padding-right: 0;
+}
+  .framer-text{left: 0;}
   .group-img .group-2{}
   .deep-dives-blox{margin-top: 50px;}
   .padding-left-all{padding: 0;}
@@ -49,7 +56,7 @@
     margin: 0;
   }
   .contact-us {
-    padding: 50px 0 0 0;
+    padding: 0 0 0 0;
   }
 
   
@@ -348,7 +355,7 @@
   }
 
   .footer {
-    padding-top: 70px;
+    padding-top: 0;
     padding-bottom: 70px;
   }
 
