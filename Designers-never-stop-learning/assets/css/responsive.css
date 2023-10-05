@@ -6,7 +6,6 @@
 /* When the browser is 1200px to all small screens,below css will be applied.
 /*-------------------------------------------------------*/
 @media screen and (max-width: 1200px) {
-   
 }
 
 /*-------------------------------------------------------*/
@@ -14,22 +13,44 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
-  .courses-details{
+  .talent-network {
+    padding-top: 0;
+  }
+  .faq-main {
+    padding-bottom: 30px;
+    padding-top: 0;
+  }
+  .cpy-right {
+    padding-top: 35px;
+  }
+  .courses-details {
     text-align: center;
-}
-.courses-details .price{
+  }
+  .courses-details .price {
     padding-right: 0;
-}
-  .framer-text{left: 0;}
-  .group-img .group-2{}
-  .deep-dives-blox{margin-top: 50px;}
-  .padding-left-all{padding: 0;}
-  .nav-inner{height: auto;align-items: center;align-items: center;justify-content: center;}
- 
+  }
+  .framer-text {
+    left: 0;
+  }
+  .group-img .group-2 {
+  }
+  .deep-dives-blox {
+    margin-top: 50px;
+  }
+  .padding-left-all {
+    padding: 0;
+  }
+  .nav-inner {
+    height: auto;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+
   .cpy-right h3 {
     text-align: center;
   }
- 
+
   .banner .ban-lhs {
     margin-top: 0;
     margin-bottom: 59px;
@@ -59,7 +80,6 @@
     padding: 0 0 0 0;
   }
 
-  
   .followers {
     margin-bottom: 30px;
   }
@@ -189,8 +209,6 @@
   }
   /*-------------------------*/
 
- 
-
   .contact-map {
     margin-top: 50px;
   }
@@ -205,8 +223,6 @@
   .foo-deati {
     margin-top: 10px;
   }
-
- 
 
   .ban-inn {
     display: block;
@@ -235,8 +251,6 @@
     padding-bottom: 70px;
     padding-top: 170px;
   }
-
-
 }
 
 /*-------------------------------------------------------*/
@@ -244,16 +258,17 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 767px) {
-  .banner{}
+  .banner {
+  }
   .comm-btn a {
     padding: 23px 45px;
   }
- 
+
   .content h3,
   .content b {
     font-size: 30px;
   }
- 
+
   .comm-heading img {
     margin-left: 30px;
   }
@@ -264,7 +279,6 @@
   .contact-map {
     padding: 0;
   }
-
 
   .banner .ban-lhs {
     padding: 0 0 0 0;
@@ -284,7 +298,6 @@
     padding: 0 10px;
   }
 
-
   .ban-lhs h1::before {
     display: none;
   }
@@ -296,7 +309,6 @@
     display: none;
   }
 
- 
   .foo-deati a {
     padding-left: 0;
   }
@@ -314,21 +326,26 @@
 /* When the browser is 576px to all small screens,below css will be applied.
 /*-------------------------------------------------------*/
 @media screen and (max-width: 576px) {
-  .deep-dives-blox{padding: 30px;}
-  
-  .oru-mission{padding: 0;}
-  .video-four{
-    margin-top: 0;
-}
-  .video-four ul li:last-child{}
-  .video-four ul{
-    flex-direction: column;
-}
-  .video-banner{}
-  .banner{
-    padding-top: 120px;
-}
+  .deep-dives-blox {
+    padding: 30px;
+  }
 
+  .oru-mission {
+    padding: 0;
+  }
+  .video-four {
+    margin-top: 0;
+  }
+  .video-four ul li:last-child {
+  }
+  .video-four ul {
+    flex-direction: column;
+  }
+  .video-banner {
+  }
+  .banner {
+    padding-top: 120px;
+  }
 
   .contact-following {
     display: none;
@@ -347,8 +364,6 @@
     text-align: center;
   }
 
-
-
   .testimonial {
     text-align: center;
     padding-top: 0;
@@ -356,29 +371,35 @@
 
   .footer {
     padding-top: 0;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
   }
-
-
 }
 
 @media screen and (max-width: 480px) {
-  .get-submit{text-align: center;}
-  .get-submit input{
+  .get-submit {
+    text-align: center;
+  }
+  .get-submit input {
     width: 52%;
-}
-  .get-submit button{
+  }
+  .get-submit button {
     width: 49%;
-}
-  .team-mates-all{padding: 20px 0 0 0;}
-  .our-courses-box{padding: 30px;}
-  .price{padding-right: 0;padding-top: 25px;}
- 
+  }
+  .team-mates-all {
+    padding: 20px 0 0 0;
+  }
+  .our-courses-box {
+    padding: 30px;
+  }
+  .price {
+    padding-right: 0;
+    padding-top: 25px;
+  }
+
   .banner .ban-lhs::before,
   .banner .ban-lhs::after {
     display: none;
   }
- 
 
   .ban-lhs h1 {
     font-size: 42px;
@@ -393,6 +414,4 @@
   .comm-btn .bg-none {
     margin-top: 25px;
   }
-
-
 }
