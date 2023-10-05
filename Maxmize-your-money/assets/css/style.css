@@ -895,7 +895,7 @@ line-height: 140px;
     float: left;
     overflow: hidden;
 }
-.slider-wrap ul{}
+
 .slider-wrap li{
     text-align: center;
     display: inline-block;
@@ -925,9 +925,46 @@ line-height: 140px;
     line-height: 32px;
 }
 .slider-wrap button{display: none  !important;}
+
+
+/*-------------------------------------------------*/
+/* Team mates slider
+/*-------------------------------------------------*/
+.team-mates{
+    background: linear-gradient(0deg, rgb(228,140,123) 0%, rgb(97,132,231) 99%);
+    float: left;
+    width: 100%;
+    padding-top: 90px;
+}
+.team-mates .comm-mani-heading{
+    color: #fff;
+    font-size: 100px;
+}
+.team-mates p{
+    color: #fff;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+}
+.slider-team-mates{
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.slider-team-mates ul{
+    display: flex;
+}
+.slider-team-mates li{
+    float: left;
+}
+.team-inner-img{
+    /* background: #fff; */
+    margin: 0 10px;
+}
+.team-inner-img img{}
 .{}
-
-
+.{}
+.{}
+.{}
 
 /*-------------------------------------------------*/
 /* BLOG
