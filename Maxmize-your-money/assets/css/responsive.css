@@ -6,6 +6,8 @@
 /* When the browser is 1200px to all small screens,below css will be applied.
 /*-------------------------------------------------------*/
 @media screen and (max-width: 1200px) {
+  .wrap-text .comm-mani-heading, .team-mates .comm-mani-heading,.wrap-text1 .comm-mani-heading{font-size: 75px;line-height: 75px;}
+  
    
     .clint-img {
       align-items: center;
@@ -19,14 +21,72 @@
   /*-------------------------------------------------------*/
   
   @media screen and (max-width: 992px) {
+    .con-det{margin-top: 50px;}
+    .blog-post{padding: 60px 0;}
+    .slider-wrap-img h3{
+    font-size: 30px;
+    line-height: 36px;
+}
+    .slider-wrap .slider-wrap-img img{
+    width: auto;
+    height: auto;
+    /* object-fit: cover; */
+}
+
+    .wrap-text2 img{
+    width: 80px;
+    margin: 0;
+}
+    .wrap-text1{
+    padding: 42px 0 0 0 !important;
+}
+    .wrap-text p{
+    padding: 0 2% 0 2%;
+}
+    .full-img-inner img{
+    top: 0;
+}
+    .full-img{
+    padding: 0 2% 0 2%;
+}
+    .wpb_wrapper::before{background-size: cover;}
+    .bridge-text .comm-btn{margin-top: 26px;}
+    .earning{
+    padding-top: 0 !important;
+}
+    .bridge-text{
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 35px;
+    padding-left: 0 !important;
+}
+    .bridge-text h2{
+    font-size: 55px;
+    line-height: 64px;
+}
+    
+    .wrap-text{
+    padding: 10px 2% 80px 2%;
+}
+    .wrap-text .comm-mani-heading, .team-mates .comm-mani-heading, .wrap-text1 .comm-mani-heading{
+    padding-top: 0;
+    font-size: 50px;
+    line-height: 66px;
+}
+    .post-left{}
+    .banner-img img{
+    transform: scale(1);
+}
     .client-logo-left{animation: logomoveleft 10s linear infinite;}
     .cpy-right h3 {
       text-align: center;
     }
    
     .the-bridge {
-      padding-bottom: 60px;
+      padding-bottom: 10px;
       padding-top: 0;
+      text-align: center;
+      padding-top: 55px;
     }
     
     .customization {
@@ -45,6 +105,7 @@
     .banner .ban-lhs {
       margin-top: 0;
       margin-bottom: 59px;
+      padding: 0;
     }
     .blg-lhs {
       padding-right: 15px !important;
@@ -69,7 +130,8 @@
    
   
     .post-left {
-      margin-top: 35px;
+      margin-top: -15px;
+      margin-bottom: 30px;
     }
   
     .post-right li {
@@ -218,7 +280,7 @@
     }
   
     .contact-map {
-      margin-top: 50px;
+      margin-top: 11px;
     }
   
     .cpy-right-top .cpy {
@@ -245,8 +307,8 @@
   
     .ban-lhs h1 {
       padding: 0;
-      font-size: 60px;
-      line-height: 60px;
+      font-size: 70px;
+      line-height: 66px;
     }
   
     .ban-lhs p {
@@ -258,7 +320,7 @@
   
     .banner {
       padding-bottom: 70px;
-      padding-top: 170px;
+      padding-top: 170px;overflow: hidden;
     }
   
     .post-right {
@@ -310,10 +372,11 @@
       line-height: 52px;
     }
     .ban-lhs p {
-      font-size: 18px;
-      line-height: 30px;
+      font-size: 15px;
+      line-height: 27px;
       font-weight: 400;
-      padding-top: 20px;
+      padding-top: 0;
+      padding-bottom: 16px;
     }
   
     .ban-inn {
@@ -405,6 +468,15 @@
   }
   
   @media screen and (max-width: 480px) {
+    .banner-img img{transform: scale(1.1);}
+    .comm-btn a{padding: 23px 30px;}
+    .wpb_wrapper img{padding: 0 0 30px 0;}
+    .con-det{padding: 30px}
+    .con-det::before{border: 5px solid #cde0ef;}
+    .post-content h2{font-size: 23px;}
+    .wrap-text1{padding: 50px 0 0 0 !important;}
+    .bridge-text h2{font-size: 40px;line-height: 50px;}
+    .shapes{z-index: -1;}
     .blg-in-comment li {
       width: 100% !important;
       padding: 0 !important;
@@ -421,8 +493,8 @@
     }
   
     .ban-lhs h1 {
-      font-size: 50px;
-      line-height: 52px;
+      font-size: 55px;
+      line-height: 60px;
     }
   
     .banner .ban-lhs .comm-btn {
