@@ -11,6 +11,16 @@ $(document).ready(function () {
 
     
 
+    
+
+
+    $(".the-bridge").scroll( function(event){
+
+        var _translatex = '-'  + event.pageX / 20 + "px";                                                                  
+        
+        $(".wpb_wrapper img").css({'transform' : 'translateX(' + _translatex +')'});
+    })
+
     //BANNER ANIMATION
     $(".banner .ban-lhs").addClass("ani1");
   
