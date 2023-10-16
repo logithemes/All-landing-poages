@@ -22,6 +22,8 @@
   /*-------------------------------------------------------*/
   
   @media screen and (max-width: 992px) {
+    .nav-inner .side-bar-right a{display: none;}
+    .nav-inner .side-bar-right{width: auto;}
     .client-logo-left{animation: logomoveleft 10s linear infinite;}
     .cpy-right h3 {
       text-align: center;
@@ -298,10 +300,7 @@
       margin-top: 50px;
     }
   
-    .contact-map {
-      margin-top: 50px;
-    }
-  
+   
     .cpy-right-top .cpy {
       flex-direction: column;
       display: flex;
@@ -388,9 +387,7 @@
       font-size: 30px;
       line-height: 39px;
     }
-    .contact-map {
-      padding: 0;
-    }
+   
     .plac-gal-imag {
       width: 100%;
     }

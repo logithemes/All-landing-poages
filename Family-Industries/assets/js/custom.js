@@ -14,19 +14,7 @@ $(document).ready(function () {
     //BANNER ANIMATION
     $(".banner .ban-lhs").addClass("ani1");
   
-
-
-    //TOP SEARCH
-    $(".search-top").on("click", function(){
-        $(".top-cl-fun").addClass("act");
-    })
-
-
-    //TOP SEARCH BOX REMOVE
-    $(".top-cl-fun span").on("click", function(){
-        $(".top-cl-fun").removeClass("act");
-    })
-
+  
     //SIDE BAR ACT
     $(".sidebat-act").on("click", function(){
         $(".side-bar").addClass("act");
@@ -79,15 +67,21 @@ $(window).on("scroll", function(){
 
 });
 
+
+function getCursor(event) {
+    let x = event.clientX;
+    let y = event.clientY;
+    let _position = `X: ${x}<br>Y: ${y}`;
+
+    const infoElement = document.getElementById('info');
+    infoElement.innerHTML = _position;
+    infoElement.style.top = y + "px";
+    infoElement.style.left = (x + 20) + "px";
+}
   
 
 });
 
 
-/*$(document).mousemove(function(event){
-    var _x = event.pageX + "px";
-    var _y = event.pageY + "px";
-    $(".corsor").css({'transform' : 'translate(' + _x +', ' + _y + ')'});
-   
-    
-});*/
+
+
