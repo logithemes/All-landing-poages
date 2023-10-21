@@ -2,7 +2,7 @@
 -----------------------------------
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0px;
@@ -15,7 +15,8 @@
   line-height: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Poppins', sans-serif;
+
   font-weight: 400;
   color: #fff;
 }
@@ -74,7 +75,7 @@ h4,
 h5,
 h6 {
   font-weight: 600 !important;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: -1px;
 }
 
@@ -91,7 +92,7 @@ p {
   font-size: 16px;
   color: #e8e1e1;
 }
-.container{max-width:   !important;}
+.container{position: relative;}
 /*-------------------------------------------------*/
 /* BANNER
 /*-------------------------------------------------*/
@@ -393,8 +394,23 @@ left: 0;
 }
 .heading-main{
     margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.heading-main img{}
+.heading-main img{
+    position: relative;
+    z-index: 3;
+}
+.heading-main .p-absolute{
+    position: absolute;
+    transform: translate(0, 3px);
+    z-index: auto;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
 .our-works span{}
 .case-study{
     float: left;
@@ -456,6 +472,7 @@ left: 0;
     float: left;
     width: 100%;
     text-align: center;
+    overflow: hidden;
 }
 .pricing-inner{
     position: relative;
@@ -471,36 +488,28 @@ left: 0;
     float: left;
 }
 .pricing-inner h2{
-    font-size: 23px;
+    font-size: 28px;
     display: block;
-    margin: 3px 0 8px 0;
+    margin: 7px 0 7px 0;
+    font-weight: 400 !important;
+    text-transform: math-auto;
 }
-.pricing-inner img{
-    margin-left: 38px;
-}
-.pricing-inner .pricr-start{
-    background: #571cff;
-    text-transform: uppercase;
-    font-size: 12px;
-    padding: 2px 10px;
-    border-radius: 20px;
-    position: absolute;
-    left: -60px;
-    bottom: 80px;
-}
+
+
 .pricing-inner .price-level{
-    background: rgba(0,0,0,.27);
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
     border-radius: 5px;
-    padding: 2px 5px;
-    margin-bottom: 10px;
     display: inline-block;
     margin-left: 10px;
+    color: #999;
 }
 .pricing-head{
     position: relative;
     display: block;
+    text-align: center;
+    border-bottom: 1px solid #666;
+    padding-bottom: 25px;
 }
 .price-list{
     float: left;
@@ -510,16 +519,26 @@ left: 0;
 .price-list h3{
     font-size: 18px;
     margin-bottom: 15px;
+    font-weight: 400 !important;
 }
 .price-list ul{}
 .price-list li{
     display: flex;
-    padding: 4px 0 2px 0;
+    padding: 6px 0 6px 0;
 }
-.price-list i{}
+.price-list i{
+    border: 1px solid #999;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 12px;
+    width: 20px;
+}
 .price-list h4{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     color: #f2ecec;
     padding-left: 10px;
     font-weight: 400 !important;
@@ -537,9 +556,9 @@ left: 0;
     font-weight: 600;
 }
 .premium-img img{
-    margin: 0 auto;
+    /* margin: 0 auto; */
     width: 150px;
-    display: table;
+    /* display: table; */
 }
 .pricing .premium-img{
     background: #000;
@@ -547,6 +566,26 @@ left: 0;
 .pricing .premium-img a{
     background: #571cff;
     border: #571cff;
+}
+.price-rate {
+  margin: 30px 0 13px 0;
+}
+
+.price-rate h3 {
+  font-size: 60px;
+  font-weight: 400 !important;
+  letter-spacing: -4px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.price-rate .rs {
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 0;
+  margin-left: 8px;
+  font-style: normal;
 }
 
 /*-------------------------------------------------*/
@@ -946,16 +985,16 @@ side-panel-con ul {
 }
 
 .menu a {
-  font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
   z-index: 1;
   text-decoration: unset;
   display: inline-block;
-  text-transform: uppercase;
+  text-transform: capitalize;
   transition: all 0.5s ease;
   color: #fff;
   letter-spacing: 1px;
+  font-weight: 500;
 }
 
 .menu a:hover {
@@ -1156,7 +1195,7 @@ side-panel-con ul {
     border-radius: 20px;
     width: 100%;
     float: left;
-    padding: 35px 35px 20px 35px;
+    padding: 40px 40px 20px 40px;
     margin-bottom: 25px;
 }
 .faq-list h3{
@@ -1166,7 +1205,7 @@ side-panel-con ul {
     margin-bottom: 11px;
 }
 .faq-list p{
-    font-size: 14px;
+    font-size: 16px;
 }
 .faq-list a{}
 .bg-color{
@@ -1214,7 +1253,7 @@ side-panel-con ul {
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     float: left;
-    padding: 30px 30px 60px 30px;
+    padding: 40px 50px 70px 50px;
     border-radius: 30px;
     overflow: hidden;
 }
@@ -1249,7 +1288,7 @@ side-panel-con ul {
 }
 .glass-gradient-bg-inner p{
     font-size: 22px;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 20px 0;
     display: inline-block;
 }
 .glass-gradient-bg-inner .comm-btn a{}
@@ -1819,6 +1858,16 @@ side-panel-con ul {
 }
 
 }
-.{}
-.{}
-.{}
+.line-shapes{}
+.line-shapes .line_1{
+  position: absolute;
+  top: 56px;
+  left: -57px;
+  z-index: 1;
+  width: 94px;
+  height: 96px;
+  background: url(../images/shapes/line.png);
+  background-size: cover;
+  transform: rotate(57deg);
+  filter: invert(1);
+}

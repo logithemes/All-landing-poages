@@ -79,15 +79,18 @@ $(window).on("scroll", function(){
 
 });
 
-  
+    
 
 });
 
 
 /*$(document).mousemove(function(event){
-    var _x = event.pageX + "px";
-    var _y = event.pageY + "px";
-    $(".corsor").css({'transform' : 'translate(' + _x +', ' + _y + ')'});
+    var _left = "-" + event.pageX / 30 + "px";
+    var _top = "-" +  event.pageY / 30 + "px";
+    //$(".heading-main .p-absolute").css({"left": _left, "top": _top})
+    $(".heading-main .p-absolute").css({'transform' : 'translate(' + _left +', ' + _top + ')'});
+    $(".heading-main .p-absolute").css("opacity", "1")
    
     
 });*/
+

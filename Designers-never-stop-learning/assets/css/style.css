@@ -2,7 +2,7 @@
 -----------------------------------
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 * {
   margin: 0px;
@@ -15,7 +15,8 @@
   line-height: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Poppins', sans-serif;
+
   font-weight: 400;
   color: #fff;
 }
@@ -73,8 +74,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700 !important;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 600 !important;
+  font-family: 'Poppins', sans-serif;
 }
 
 img {
@@ -103,31 +104,12 @@ p {
   height: 100%;
   background: #000;
 }
+.banner::before{position: absolute;content: "";background: url(../images/background/globe.png);right: 0;top: 0;bottom: 0;background-size: cover;width: 500px;height: 500px;}
 
-.ani-top {
-  position: absolute;
-  content: "";
-  background: url(../images/icons/dots.svg);
-  right: 0;
-  top: 40px;
-  width: 70px;
-  height: 70px;
-  animation: align-itms 30s infinite linear;
-  background-size: cover;
-}
-
-@keyframes align-itms {
-  0% {
-    left: -136px;
-  }
-
-  50% {
-    left: 12%;
-  }
-
-  100% {
-    left: -70px;
-  }
+.banner::after{
+    left: auto !important;
+    right: 0;
+    z-index: 2 !important;
 }
 
 .banner .ban-lhs {
@@ -135,7 +117,11 @@ p {
   transition: all 0.5s ease;
   opacity: 0;
 }
-
+.ban-lhs span{
+    display: inline-block;
+    color: #00bcd4;
+    font-weight: 700;
+}
 .banner .ban-lhs.ani1 {
   transform: translateX(0);
   transition: all 0.5s ease;
@@ -154,7 +140,8 @@ p {
   font-size: 73px;
   /* -webkit-text-stroke: 1px #0000005c; */
   color: transparent;
-  line-height: 75px;
+  line-height: 80px;
+  padding-right: 94px;
 }
 .ban-lhs h1::before {
   background-color: #efece6;
@@ -183,6 +170,7 @@ p {
 
   -webkit-text-fill-color: transparent;
 }
+
 
 .ban-lhs p {
   font-size: 20px;
@@ -240,6 +228,24 @@ p {
 .oru-mission {
   padding: 80px 0 0 0;
 }
+.mission-img{position: relative;width: 100%;}
+.mission-img::before{
+  position: absolute;
+  content: "";
+  border-radius: 50px; /*1*/
+  border: 2px solid transparent; /*2*/
+  background: linear-gradient(45deg,#307421,#00bcd4) border-box; /*3*/
+  -webkit-mask: /*4*/
+     linear-gradient(#fff 0 0) padding-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+  mask-composite: exclude; /*5*/
+  width: 100%;
+  height: 100%;
+  }
+
+.mission-img img{}
+
 
 .oru-mission .comm-mani-heading {
   color: #999;
@@ -263,16 +269,29 @@ p {
   float: left;
   width: 100%;
   padding: 40px;
-  border: 2px solid;
-  border-image-slice: 1;
-  border-width: 1px;
-  border-image-source: linear-gradient(to left, #743ad5ba, #d53a9da1);
+
   text-transform: capitalize;
   overflow: hidden;
   position: relative;
   transition: all 0.5s ease;
   height: 100%;
 }
+.our-courses-box::before{
+  position: absolute;
+  content: "";
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background: linear-gradient(45deg,#192516,#08424a) border-box;
+  -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  }
 .our-courses-box:hover .price span {
   transition: all 0.5s ease;
   transform: rotate(0deg);
@@ -298,11 +317,19 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+.our-courses-box .framer-text1{
+    color: #fffbd8;
+}
+.our-courses-box .framer-text2{color: #ff9373;}
+.our-courses-box .framer-text3{color: #827efd;}
+.our-courses-box .framer-text4{color: #4ed2c7;}
+.our-courses-box .framer-text5{color: #ff9373;}
 .name span {
   font-weight: 600;
-  color: #fffbd8;
+  color: #827efd;
   margin: 0;
   padding: 0;
+  text-transform: capitalize;
 }
 .name i,
 .price span {
@@ -320,7 +347,7 @@ p {
   padding: 25px 0 0 0;
 }
 .course-heading h3 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 32px;
 }
 
@@ -357,10 +384,11 @@ p {
   width: 100%;
   opacity: 0.5;
   transition: sll 0.5s ease;
+  z-index: -1;
 }
 .group-img .group-2 {
   position: absolute;
-  bottom: -33px;
+  bottom: -41px;
   right: 0;
   filter: brightness(0.6);
   transform: scale();
@@ -670,22 +698,21 @@ p {
 
 .menu a {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
   z-index: 1;
   text-decoration: unset;
   display: inline-block;
-  text-transform: uppercase;
+  text-transform: capitalize;
   transition: all 0.5s ease;
-  color: #fff;
-  letter-spacing: 1px;
+  color: #999;
   margin-left: 30px;
 }
 .menu ul li .act1 {
-  background: #ffff;
+  background: #322f2f;
   color: #000;
   padding: 0 10px;
-  border-radius: 5px;
+  color: #fff;
 }
 .menu a:hover {
   color: #00bcd4 !important;
@@ -778,23 +805,10 @@ p {
   padding: 25px 0 0 0;
   margin-bottom: 0;
   line-height: 52px;
-  animation: deco infinite;
-  animation-duration: 8s;
+  
 }
 
-@keyframes deco{
 
-  0% {
-    font-variation-settings: "wght" 100;
-}
-50% {
-    font-variation-settings: "wght" 900;
-}
-100% {
-    font-variation-settings: "wght" 100;
-}
-
-}
 
 
 .inn img {
@@ -814,11 +828,11 @@ p {
   padding: 23px 62px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   position: relative;
   transition: all 0.5s ease;
   /* background: #a9ff5c; */
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 1px;
   z-index: 6;
   border-radius: 3px;
@@ -860,7 +874,7 @@ p {
 
 .comm-mani-heading {
   margin-bottom: 40px;
-  text-transform: capitalize;
+  text-transform: math-auto;
   padding-right: 9px;
   font-size: 43px;
   line-height: 50px;
@@ -895,9 +909,11 @@ p {
   background: url(../images/team/round.png);
   width: 250px;
   height: 250px;
-  z-index: -1; /* border-radius: 50%; */
+  z-index: -1;
+  /* border-radius: 50%; */
   transition: all 0.5s ease;
-  transform: scale(1.1) rotate(200deg); /* clip-path: polygon(0 0, 111% 0, 92.5% 100%, 0% 0%); */
+  transform: scale(1.1) rotate(20deg);
+  /* clip-path: polygon(0 0, 111% 0, 92.5% 100%, 0% 0%); */
   background-size: cover;
 }
 .team-mates img {
@@ -1051,8 +1067,8 @@ p {
 
 .talent-network .network i {
   font-style: italic;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
 }
 .talent-network .network strong {
   background: rgba(98, 210, 224, 0.6) !important;
@@ -1081,8 +1097,8 @@ p {
   filter: brightness(0.5);
 }
 .network .group-2 {
-  /* z-index: -1; */
-  width: 320px;
+  z-index: 0;
+  width: 355px;
   filter: sepia(1);
 }
 
@@ -1172,16 +1188,8 @@ p {
   border-radius: 20px;
 }
 
-.faq-rhs ul li:hover {
-  box-shadow: 0px 8px 40px 0px rgb(0 48 31 / 10%);
-  background: #fff;
-  transition: all 0.3s ease;
-}
 
-.faq-rhs ul li:hover h3 {
-  transition: all 0.6s ease;
-  color: #ff5722;
-}
+
 
 .faq-rhs ul li h3 {
   font-size: 19px;
@@ -1252,6 +1260,7 @@ p {
   float: left;
   overflow: hidden;
   position: relative;
+  margin-top: 20px;
 }
 
 .testimonial1 ul {
@@ -1272,6 +1281,9 @@ p {
   position: relative;
   z-index: 1;
 }
+
+.brand-img{}
+.{}
 
 .star i {
   color: #ffd807;
@@ -1335,9 +1347,53 @@ p {
   position: relative;
   padding: 0 0 0 0;
   overflow: hidden;
-  overflow: hidden;
+  overflow: hidden;float: left;width: 100%;
 }
 
+.contact-us::before, .contact-us::after, .banner::after{
+
+position: absolute;
+
+content: "";
+
+top: 10%;
+
+left: 100px;
+
+width: 150px;
+
+height: 150px;
+
+background: linear-gradient(133deg, #128593, transparent);
+
+border-radius: 50%;
+
+animation: animationFramesThree 11s infinite linear alternate;
+
+z-index: -1;
+
+}
+.contact-us::after{top: auto;bottom: 7%;left: auto;right: 0;animation: none;}
+  @keyframes animationFramesThree {
+    0% {
+      transform: translate(0, 0) rotate(0);
+  }
+  20% {
+      transform: translate(100px, -100px) rotate(360deg);
+  }
+  40% {
+      transform: translate(-60px, 100px) rotate(0);
+  }
+  60% {
+      transform: translate(40px, 60px) rotate(-360deg);
+  }
+  80% {
+      transform: translate(-40px, 60px) rotate(0);
+  }
+  100% {
+      transform: translate(0, 0) rotate(360deg);
+  }
+  }
 .con-det {
   text-transform: capitalize;
   position: relative;
@@ -1346,40 +1402,7 @@ p {
   /* border: 10px solid #fff; */
   margin: 0 auto;
   display: table;
-  max-width: 450px;
-}
-.con-det::before,
-.con-det::after {
-  position: absolute;
-  content: "";
-  top: 25%;
-  left: -169px;
-  width: 90px;
-  height: 90px;
-  background: #00bcd4;
-  border-radius: 50%;
-  transform: rotate(193deg);
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
-
-.con-det::after {
-  left: auto;
-  right: -169px;
-  transform: rotate(-286deg);
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  );
-  top: auto;
-  bottom: 200px;
+  max-width: 500px;
 }
 
 .contact-form {
@@ -1387,6 +1410,27 @@ p {
   width: 100%;
   position: relative;
   z-index: 2;
+  background-color: rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 10px;
+  padding: 50px;
+}
+.contact-form::before, .contact-form::after {
+  position: absolute;
+  content: "";
+  background: url(../images/icons/1.svg);
+  top: -41px;
+  left: -48px;
+  width: 63px;
+  height: 45px;
+  background-size: cover;
+  }
+.contact-form::after{
+    top: auto;
+    left: auto;
+    bottom: -48px;
+    transform: scaley(-1) rotate(61deg);
+    right: -38px;
 }
 .contact-form .sub {
   background: #fff;
@@ -1414,12 +1458,12 @@ p {
   float: left;
   width: 100%;
   border: none;
-  padding: 20px;
+  padding: 15px;
   background: rgba(255, 255, 255, 0.08);
   color: rgb(255, 255, 255);
   box-shadow: transparent 0px 0px 0px 1px inset;
   border: 1px solid #443f3f;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .contact-form .sub-btn {
@@ -1556,7 +1600,7 @@ p {
   background: #4caf50;
   color: #fff;
 }
-
+.contact-form{}
 /*-------------------------------------------------*/
 /*  FOOTER
 /*-------------------------------------------------*/
@@ -1867,18 +1911,7 @@ p {
 .video-img img {
   margin-bottom: 30px;
 }
-.video-img a {
-  position: absolute;
-}
-.video-img i {
-  background: red;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-}
+
 
 .courses-details .price {
   padding-top: 30px;

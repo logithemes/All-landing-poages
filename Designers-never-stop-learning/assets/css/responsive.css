@@ -13,6 +13,7 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
+  .mission-img::before{width: 92%;}
   .talent-network {
     padding-top: 0;
   }
@@ -25,6 +26,8 @@
   }
   .courses-details {
     text-align: center;
+    padding-top: 35px !important;
+    padding-bottom: 35px;
   }
   .courses-details .price {
     padding-right: 0;
@@ -155,6 +158,7 @@
     width: 100%;
     border-bottom: 1px solid #908484;
     padding-bottom: 17px;
+    margin-left: 10px;
   }
 
   .menu img {
@@ -273,8 +277,8 @@
     margin-left: 30px;
   }
   .comm-heading h2 {
-    font-size: 35px;
-    line-height: 43px;
+    font-size: 35px !important;
+    line-height: 43px !important;
   }
   .contact-map {
     padding: 0;
@@ -326,21 +330,33 @@
 /* When the browser is 576px to all small screens,below css will be applied.
 /*-------------------------------------------------------*/
 @media screen and (max-width: 576px) {
+  .get-submit{text-align: center;}
+  .framer li{justify-content: flex-start;}
+  .framer-text{padding-left: 10px;}
+  .deep-dives{padding-top: 0;}
+  .brand-img{display: flex;flex-direction: column;align-items: center;}
+  .brand-img img{width: 100px;margin-bottom: 10px;}
+  .testimonial-img p{padding-top: 15px;padding-bottom: 15px;}
+  .clint-img{flex-direction: column;align-items: center;justify-content: center;}
+  .contact-form{padding: 30px;}
+  .team-mates-all{padding-top: 40px;}
+  .contact-form::before, .contact-form::after{display: none;}
+  .network .group-2{display: none;}
   .deep-dives-blox {
     padding: 30px;
+    margin-top: 0;
   }
 
+  .video-four ul {
+    flex-direction: column;
+  }
   .oru-mission {
     padding: 0;
   }
   .video-four {
     margin-top: 0;
   }
-  .video-four ul li:last-child {
-  }
-  .video-four ul {
-    flex-direction: column;
-  }
+ 
   .video-banner {
   }
   .banner {
